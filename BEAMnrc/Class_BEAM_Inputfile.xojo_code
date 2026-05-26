@@ -20,6 +20,10 @@ Protected Class Class_BEAM_Inputfile
 		      CMs(i).Bottom_z=cms(i).BLOCK.ZMAX_BLOCK
 		    elseif cms(i).CM_Names="ARCCHM" Then
 		      CMs(i).Bottom_z=cms(i).ARCCHM.ZMAX
+		      
+		    elseif cms(i).CM_Names="FLATFILT" Then
+		      CMs(i).Bottom_z=cms(i).FLATFILT.Bottom_z
+		      
 		    end
 		  next
 		End Sub
@@ -58,7 +62,7 @@ Protected Class Class_BEAM_Inputfile
 		    ElseIf CMs(x).CM_Names="FLATFILT" Then //---------------------------------------------------------------
 		      oneCM=CMs(x)
 		      CMs(x).FLATFILT=new Class_BEAM_CM_FLATFILT
-		      CMs(x).FLATFILT.read(oneCM)
+		      CMs(x).FLATFILT.read(oneCM.text)
 		      
 		    ElseIf CMs(x).CM_Names="JAWS" Then //---------------------------------------------------------------
 		      CMs(x).JAWS=new Class_BEAM_CM_JAWS

@@ -743,6 +743,78 @@ Protected Class Class_BEAM
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
+		Sub egs_Input_CM_FLATFILT(CM as Class_Beam_Inputfile_CMs)
+		  //--------------------------------------------
+		  // Write CM FLATFILT
+		  // 
+		  //
+		  //--------------------------------------------
+		  Dim i ,k,j as integer
+		  Dim temp as String
+		  Dim bb as Boolean
+		  //--------------------------------------------
+		  
+		  
+		  bb=egs_Input_CM_FLATFILT_Upload(CM)
+		  
+		  cm.FLATFILT.Write(cm.text)
+		  
+		  
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Function egs_Input_CM_FLATFILT_Upload(CM as Class_Beam_Inputfile_CMs) As boolean
+		  //--------------------------------------------
+		  // Method to find the right Cyberknife Applicator  CM
+		  // 
+		  //
+		  //--------------------------------------------
+		  Dim temp,text(-1),app_id as String
+		  Dim f as FolderItem
+		  Dim ts as TextInputStream
+		  Dim un,mac,win as Integer
+		  //--------------------------------------------
+		  app_id=gRTOG.Plan(Plan_Index).Beam(beam_number).Aperture_ID
+		  
+		  
+		  if app_id<>"" and CM.CM_Identifier="SecCol" Then
+		    app_id="FLATFILT-"+app_id
+		    
+		    f=gPref.BEAMnrc_fi
+		    f=f.Child(app_id+".egsinp")
+		    if f.Exists =False Then
+		      gBEAM.egs_msg.append "Error in CM FLATFILT ! Could not find file : "+f.Name
+		      Return False
+		    end
+		    
+		    ts=f.OpenAsTextFile
+		    temp=ts.ReadAll
+		    ts.Close
+		    
+		    un=CountFields(temp,EndOfLine.UNIX)
+		    mac=CountFields(temp,EndOfLine.Macintosh)
+		    win=CountFields(temp,EndOfLine.Windows)
+		    
+		    if mac>un Then
+		      text=Split(temp,EndOfLine.Macintosh)
+		    elseif Win>un Then
+		      text=Split(temp,EndOfLine.Windows)
+		    else
+		      text=Split(temp,EndOfLine.UNIX)
+		    end
+		    
+		    
+		    
+		    cm.FLATFILT.Read(text)
+		    
+		  end
+		  
+		  Return True
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
 		Sub egs_Input_CM_Jaws(cm as Class_Beam_Inputfile_CMs, type as Integer)
 		  //------------------------------------
 		  // Format for Standard BEAMnrc JAWS
@@ -2627,6 +2699,10 @@ Protected Class Class_BEAM
 		      
 		    elseif Inputfile.CMs(i).CM_Names="WEDGE" then
 		      egs_Input_CM_Wedge(Inputfile.CMs(i))
+		      
+		      
+		    elseif Inputfile.CMs(i).CM_Names="FLATFILT" then
+		      egs_Input_CM_FLATFILT(Inputfile.CMs(i))
 		      
 		    elseif Inputfile.CMs(i).CM_Names="APPLICAT" then
 		      egs_Input_CM_APPLICAT(Inputfile.CMs(i))

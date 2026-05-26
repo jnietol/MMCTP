@@ -1,7 +1,35 @@
 #tag Class
 Protected Class Class_BEAM_CM_FLATFILT_Layers
 	#tag Property, Flags = &h0
+		DOSE_ZONE(-1) As Integer
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		ECUT(-1) As single
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		IREGION_TO_BIT(-1) As Integer
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
 		ISSCM_NO As Integer
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		MED_IN(-1) As String
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		PCUT(-1) As single
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		RBOT(-1) As Single
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		RTOP(-1) As Single
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
