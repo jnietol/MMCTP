@@ -2425,7 +2425,7 @@ Inherits Thread
 		    end
 		    
 		    
-		  elseif elseif gDOSXYZ.DOSXYZ(egsphant_index).DOSXYZ_Input(beam).isource=9 or _
+		  elseif  gDOSXYZ.DOSXYZ(egsphant_index).DOSXYZ_Input(beam).isource=9 or _
 		    gDOSXYZ.DOSXYZ(egsphant_index).DOSXYZ_Input(beam).isource=10 or _
 		    gDOSXYZ.DOSXYZ(egsphant_index).DOSXYZ_Input(beam).isource=11 or _
 		    gDOSXYZ.DOSXYZ(egsphant_index).DOSXYZ_Input(beam).isource=21 or _
