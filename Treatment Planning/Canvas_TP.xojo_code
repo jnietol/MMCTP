@@ -2445,6 +2445,27 @@ Inherits Canvas
 		            Display.RGBSurface.Pixel(pixx+2,pixy+2) = RGB(255,0,0)
 		          end
 		        end if
+		        
+		        Isox = gRTOG.Plan(plan_index).Beam(RTOGBeam_Index).Collimator.Fields(0).Node_X-(gVis.xoff_set-gVis.scale_width/2)
+		        Isoy = gRTOG.Plan(plan_index).Beam(RTOGBeam_Index).Collimator.Fields(0).Node_y-gVis.yoff_set+gVis.scale_height/2
+		        Isoz = gRTOG.Plan(plan_index).Beam(RTOGBeam_Index).Collimator.Fields(0).Node_Z
+		        if abs(Isoz - gRTOG.Scan(canvas_slice).Z_Value) < (gvis.scale_thickness-gvis.scale_thickness/10) Then
+		          pixx=round((Isox/gvis.pixel_resolution)*canvas_scale)+buffer_offx
+		          pixy=round((Isoy/gvis.pixel_resolution)*canvas_scale)+buffer_offy
+		          if pixx>2 and pixy>2 and pixx<=(Display.Width-2) and pixy<=(Display.Height-2) Then
+		            Display.RGBSurface.Pixel (pixx-2,pixy-2) = RGB(0,255,0)
+		            Display.RGBSurface.Pixel(pixx+2,pixy-2) = RGB(0,255,0)
+		            Display.RGBSurface.Pixel(pixx-1,pixy-1) = RGB(0,255,0)
+		            Display.RGBSurface.Pixel(pixx+1,pixy-1) = RGB(0,255,0)
+		            Display.RGBSurface.Pixel(pixx,pixy) = RGB(0,255,0)
+		            Display.RGBSurface.Pixel(pixx-1,pixy+1) = RGB(0,255,0)
+		            Display.RGBSurface.Pixel(pixx+1,pixy+1) = RGB(0,255,0)
+		            Display.RGBSurface.Pixel(pixx-2,pixy+2) = RGB(0,255,0)
+		            Display.RGBSurface.Pixel(pixx+2,pixy+2) = RGB(0,255,0)
+		          end
+		        end if
+		        
+		        
 		      end
 		    end if
 		  end

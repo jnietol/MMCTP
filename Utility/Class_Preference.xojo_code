@@ -68,7 +68,7 @@ Protected Class Class_Preference
 		  #elseif TargetMacOS Then
 		    
 		    fi=SpecialFolder.Applications
-		     if fi =Nil then // added for MacOS 10.15 version
+		    if fi =Nil then // added for MacOS 10.15 version
 		      fi=new FolderItem("/Applications")
 		    end
 		    

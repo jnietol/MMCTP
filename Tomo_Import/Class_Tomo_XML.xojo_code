@@ -8,6 +8,7 @@ Protected Class Class_Tomo_XML
 		  //-------------------------------
 		  Dim xdoc as XmlDocument
 		  Dim node,subnode,fullDiseaseDataArray,fullDiseaseDataArray2,fullPlanDataArray as XMLNode
+		  
 		  Dim i, k,subcount,subsubcount, count as Integer
 		  Dim out,ss as String
 		  Dim ts as TextInputStream

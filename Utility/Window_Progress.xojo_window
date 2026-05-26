@@ -1,38 +1,39 @@
 #tag Window
 Begin Window Window_Progress
-   BackColor       =   &cFFFFFF00
    Backdrop        =   0
-   CloseButton     =   False
+   BackgroundColor =   &cFFFFFF00
    Composite       =   False
-   Frame           =   1
+   DefaultLocation =   1
    FullScreen      =   False
-   FullScreenButton=   False
-   HasBackColor    =   False
+   HasBackgroundColor=   False
+   HasCloseButton  =   False
+   HasFullScreenButton=   False
+   HasMaximizeButton=   False
+   HasMinimizeButton=   True
    Height          =   116
    ImplicitInstance=   True
-   LiveResize      =   "False"
    MacProcID       =   0
-   MaxHeight       =   32000
-   MaximizeButton  =   False
-   MaxWidth        =   32000
+   MaximumHeight   =   32000
+   MaximumWidth    =   32000
    MenuBar         =   0
    MenuBarVisible  =   True
-   MinHeight       =   64
-   MinimizeButton  =   True
-   MinWidth        =   64
-   Placement       =   1
+   MinimumHeight   =   64
+   MinimumWidth    =   64
    Resizeable      =   False
    Title           =   ""
+   Type            =   1
    Visible         =   True
    Width           =   478
    Begin Label StaticText
-      AutoDeactivate  =   True
+      AllowAutoDeactivate=   True
       Bold            =   False
       DataField       =   ""
       DataSource      =   ""
       Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   12.0
+      FontUnit        =   0
       Height          =   64
-      HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
@@ -49,11 +50,9 @@ Begin Window Window_Progress
       TabPanelIndex   =   0
       TabStop         =   True
       Text            =   ""
-      TextAlign       =   0
+      TextAlignment   =   0
       TextColor       =   &c00000000
-      TextFont        =   "System"
-      TextSize        =   12.0
-      TextUnit        =   0
+      Tooltip         =   ""
       Top             =   14
       Transparent     =   False
       Underline       =   False
@@ -61,10 +60,9 @@ Begin Window Window_Progress
       Width           =   438
    End
    Begin ProgressBar ProgressBar
-      AutoDeactivate  =   True
+      AllowAutoDeactivate=   True
       Enabled         =   True
       Height          =   12
-      HelpTag         =   ""
       Indeterminate   =   False
       Index           =   -2147483648
       InitialParent   =   ""
@@ -74,11 +72,12 @@ Begin Window Window_Progress
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   False
-      Maximum         =   100
+      MaximumValue    =   100
       Scope           =   0
       TabIndex        =   1
       TabPanelIndex   =   0
-      TabStop         =   "True"
+      TabStop         =   True
+      Tooltip         =   ""
       Top             =   90
       Transparent     =   False
       Value           =   0.0

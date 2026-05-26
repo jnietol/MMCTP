@@ -1,28 +1,27 @@
 #tag Window
 Begin Window Window_3DView
-   BackColor       =   &cFFFFFF00
    Backdrop        =   0
-   CloseButton     =   True
+   BackgroundColor =   &cFFFFFF00
    Composite       =   False
-   Frame           =   0
+   DefaultLocation =   2
    FullScreen      =   False
-   FullScreenButton=   False
-   HasBackColor    =   False
+   HasBackgroundColor=   False
+   HasCloseButton  =   True
+   HasFullScreenButton=   False
+   HasMaximizeButton=   True
+   HasMinimizeButton=   True
    Height          =   635
    ImplicitInstance=   True
-   LiveResize      =   "True"
    MacProcID       =   0
-   MaxHeight       =   32000
-   MaximizeButton  =   True
-   MaxWidth        =   32000
+   MaximumHeight   =   32000
+   MaximumWidth    =   32000
    MenuBar         =   -1100839426
    MenuBarVisible  =   True
-   MinHeight       =   64
-   MinimizeButton  =   True
-   MinWidth        =   64
-   Placement       =   2
+   MinimumHeight   =   64
+   MinimumWidth    =   64
    Resizeable      =   True
    Title           =   "3D Viewer"
+   Type            =   0
    Visible         =   True
    Width           =   745
    Begin Rb3dSpace_MMCTP Canvas_3D
@@ -42,11 +41,13 @@ Begin Window Window_3DView
       Untitled1       =   0
    End
    Begin TabPanel TabPanel1
-      AutoDeactivate  =   True
+      AllowAutoDeactivate=   True
       Bold            =   False
       Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   0.0
+      FontUnit        =   0
       Height          =   260
-      HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
@@ -63,9 +64,7 @@ Begin Window Window_3DView
       TabIndex        =   35
       TabPanelIndex   =   0
       TabStop         =   True
-      TextFont        =   "System"
-      TextSize        =   0.0
-      TextUnit        =   0
+      Tooltip         =   ""
       Top             =   363
       Transparent     =   False
       Underline       =   False
@@ -73,31 +72,32 @@ Begin Window Window_3DView
       Visible         =   True
       Width           =   705
       Begin TextField EditField_Scale
-         AcceptTabs      =   False
-         Alignment       =   0
-         AutoDeactivate  =   True
-         AutomaticallyCheckSpelling=   False
-         BackColor       =   &cFFFFFF00
+         AllowAutoDeactivate=   True
+         AllowFocusRing  =   True
+         AllowSpellChecking=   False
+         AllowTabs       =   False
+         BackgroundColor =   &cFFFFFF00
          Bold            =   False
-         Border          =   True
-         CueText         =   ""
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Format          =   ""
+         HasBorder       =   True
          Height          =   20
-         HelpTag         =   ""
+         Hint            =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
          Left            =   585
-         LimitText       =   4
          LockBottom      =   True
          LockedInPosition=   False
          LockLeft        =   False
          LockRight       =   True
          LockTop         =   False
-         Mask            =   ""
+         MaximumCharactersAllowed=   4
          Password        =   False
          ReadOnly        =   False
          Scope           =   0
@@ -105,25 +105,26 @@ Begin Window Window_3DView
          TabPanelIndex   =   1
          TabStop         =   True
          Text            =   "100"
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   562
          Transparent     =   False
          Underline       =   False
-         UseFocusRing    =   True
+         ValidationMask  =   ""
          Visible         =   True
          Width           =   75
       End
       Begin Label StaticText_Scale
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -140,11 +141,9 @@ Begin Window Window_3DView
          TabPanelIndex   =   1
          TabStop         =   True
          Text            =   "Scale"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   563
          Transparent     =   False
          Underline       =   False
@@ -152,28 +151,28 @@ Begin Window Window_3DView
          Width           =   88
       End
       Begin Slider Slider_Scale
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
+         AllowLiveScrolling=   True
          Enabled         =   True
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Left            =   464
          LineStep        =   1
-         LiveScroll      =   True
          LockBottom      =   True
          LockedInPosition=   False
          LockLeft        =   False
          LockRight       =   True
          LockTop         =   False
-         Maximum         =   1500
-         Minimum         =   0
+         MaximumValue    =   1500
+         MinimumValue    =   0
          PageStep        =   20
          Scope           =   0
          TabIndex        =   2
          TabPanelIndex   =   1
          TabStop         =   True
-         TickStyle       =   0
+         TickMarkStyle   =   0
+         Tooltip         =   ""
          Top             =   595
          Transparent     =   False
          Value           =   0
@@ -181,28 +180,28 @@ Begin Window Window_3DView
          Width           =   242
       End
       Begin Slider Slider_Couch
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
+         AllowLiveScrolling=   True
          Enabled         =   False
          Height          =   16
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Left            =   148
          LineStep        =   1
-         LiveScroll      =   True
          LockBottom      =   True
          LockedInPosition=   False
          LockLeft        =   False
          LockRight       =   False
          LockTop         =   False
-         Maximum         =   359
-         Minimum         =   0
+         MaximumValue    =   359
+         MinimumValue    =   0
          PageStep        =   1
          Scope           =   0
          TabIndex        =   0
          TabPanelIndex   =   2
          TabStop         =   True
-         TickStyle       =   0
+         TickMarkStyle   =   0
+         Tooltip         =   ""
          Top             =   512
          Transparent     =   False
          Value           =   180
@@ -210,13 +209,15 @@ Begin Window Window_3DView
          Width           =   194
       End
       Begin Label StaticText14
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -233,11 +234,9 @@ Begin Window Window_3DView
          TabPanelIndex   =   2
          TabStop         =   True
          Text            =   "Couch"
-         TextAlign       =   2
+         TextAlignment   =   3
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   508
          Transparent     =   False
          Underline       =   False
@@ -245,13 +244,15 @@ Begin Window Window_3DView
          Width           =   57
       End
       Begin Label StaticText15
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -268,11 +269,9 @@ Begin Window Window_3DView
          TabPanelIndex   =   2
          TabStop         =   True
          Text            =   "Collimator"
-         TextAlign       =   2
+         TextAlignment   =   3
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   469
          Transparent     =   False
          Underline       =   False
@@ -280,28 +279,28 @@ Begin Window Window_3DView
          Width           =   76
       End
       Begin Slider Slider_Collimator
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
+         AllowLiveScrolling=   True
          Enabled         =   True
          Height          =   17
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Left            =   148
          LineStep        =   1
-         LiveScroll      =   True
          LockBottom      =   True
          LockedInPosition=   False
          LockLeft        =   False
          LockRight       =   False
          LockTop         =   False
-         Maximum         =   359
-         Minimum         =   0
+         MaximumValue    =   359
+         MinimumValue    =   0
          PageStep        =   1
          Scope           =   0
          TabIndex        =   3
          TabPanelIndex   =   2
          TabStop         =   True
-         TickStyle       =   0
+         TickMarkStyle   =   0
+         Tooltip         =   ""
          Top             =   469
          Transparent     =   False
          Value           =   180
@@ -309,28 +308,28 @@ Begin Window Window_3DView
          Width           =   194
       End
       Begin Slider Slider_Gantry
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
+         AllowLiveScrolling=   True
          Enabled         =   True
          Height          =   16
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Left            =   148
          LineStep        =   1
-         LiveScroll      =   True
          LockBottom      =   True
          LockedInPosition=   False
          LockLeft        =   False
          LockRight       =   False
          LockTop         =   False
-         Maximum         =   359
-         Minimum         =   0
+         MaximumValue    =   359
+         MinimumValue    =   0
          PageStep        =   1
          Scope           =   0
          TabIndex        =   4
          TabPanelIndex   =   2
          TabStop         =   True
-         TickStyle       =   0
+         TickMarkStyle   =   0
+         Tooltip         =   ""
          Top             =   428
          Transparent     =   False
          Value           =   0
@@ -338,13 +337,15 @@ Begin Window Window_3DView
          Width           =   194
       End
       Begin Label StaticText4
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -361,11 +362,9 @@ Begin Window Window_3DView
          TabPanelIndex   =   2
          TabStop         =   True
          Text            =   "Gantry"
-         TextAlign       =   2
+         TextAlignment   =   3
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   424
          Transparent     =   False
          Underline       =   False
@@ -373,14 +372,16 @@ Begin Window Window_3DView
          Width           =   57
       End
       Begin CheckBox CheckBox_Jaws
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          Caption         =   "View Jaws"
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   12.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -395,9 +396,7 @@ Begin Window Window_3DView
          TabIndex        =   3
          TabPanelIndex   =   1
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   12.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   471
          Transparent     =   False
          Underline       =   False
@@ -406,14 +405,16 @@ Begin Window Window_3DView
          Width           =   87
       End
       Begin CheckBox CheckBox_BEV
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          Caption         =   "snap to BEV"
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -424,29 +425,29 @@ Begin Window Window_3DView
          LockRight       =   False
          LockTop         =   False
          Scope           =   0
-         State           =   0
          TabIndex        =   4
          TabPanelIndex   =   1
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   501
          Transparent     =   False
          Underline       =   False
          Value           =   False
          Visible         =   True
+         VisualState     =   0
          Width           =   102
       End
       Begin CheckBox CheckBox_Field
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          Caption         =   "View Field Marks"
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   12.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -461,9 +462,7 @@ Begin Window Window_3DView
          TabIndex        =   5
          TabPanelIndex   =   1
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   12.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   469
          Transparent     =   False
          Underline       =   False
@@ -472,14 +471,16 @@ Begin Window Window_3DView
          Width           =   123
       End
       Begin CheckBox CheckBox_surface
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          Caption         =   "Surface Render"
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -490,29 +491,29 @@ Begin Window Window_3DView
          LockRight       =   False
          LockTop         =   False
          Scope           =   0
-         State           =   0
          TabIndex        =   6
          TabPanelIndex   =   1
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   439
          Transparent     =   False
          Underline       =   False
          Value           =   False
          Visible         =   True
+         VisualState     =   0
          Width           =   131
       End
       Begin CheckBox CheckBox_Wireframe
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          Caption         =   "Wire"
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -523,29 +524,29 @@ Begin Window Window_3DView
          LockRight       =   False
          LockTop         =   False
          Scope           =   0
-         State           =   0
          TabIndex        =   7
          TabPanelIndex   =   1
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   439
          Transparent     =   False
          Underline       =   False
          Value           =   False
          Visible         =   True
+         VisualState     =   0
          Width           =   77
       End
       Begin CheckBox CheckBox_axis
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          Caption         =   "Axis"
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -556,29 +557,29 @@ Begin Window Window_3DView
          LockRight       =   False
          LockTop         =   False
          Scope           =   0
-         State           =   0
          TabIndex        =   8
          TabPanelIndex   =   1
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   533
          Transparent     =   False
          Underline       =   False
          Value           =   False
          Visible         =   True
+         VisualState     =   0
          Width           =   71
       End
       Begin CheckBox CheckBox_show_struc
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          Caption         =   "Structures"
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -593,9 +594,7 @@ Begin Window Window_3DView
          TabIndex        =   9
          TabPanelIndex   =   1
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   439
          Transparent     =   False
          Underline       =   False
@@ -604,14 +603,16 @@ Begin Window Window_3DView
          Width           =   89
       End
       Begin CheckBox CheckBox_show_isocenter
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          Caption         =   "Isocenter"
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -626,9 +627,7 @@ Begin Window Window_3DView
          TabIndex        =   10
          TabPanelIndex   =   1
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   501
          Transparent     =   False
          Underline       =   False
@@ -637,14 +636,16 @@ Begin Window Window_3DView
          Width           =   103
       End
       Begin CheckBox CheckBox_MLC
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          Caption         =   "View MLC"
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   12.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -659,9 +660,7 @@ Begin Window Window_3DView
          TabIndex        =   11
          TabPanelIndex   =   1
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   12.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   564
          Transparent     =   False
          Underline       =   False
@@ -670,14 +669,16 @@ Begin Window Window_3DView
          Width           =   93
       End
       Begin CheckBox CheckBox_Debug
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          Caption         =   "Debug sky"
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   12.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -688,29 +689,29 @@ Begin Window Window_3DView
          LockRight       =   True
          LockTop         =   False
          Scope           =   0
-         State           =   0
          TabIndex        =   12
          TabPanelIndex   =   1
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   12.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   422
          Transparent     =   False
          Underline       =   False
          Value           =   False
          Visible         =   True
+         VisualState     =   0
          Width           =   94
       End
       Begin CheckBox CheckBox_Ambient
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          Caption         =   "Ambient Light"
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   24
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -725,9 +726,7 @@ Begin Window Window_3DView
          TabIndex        =   13
          TabPanelIndex   =   1
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   488
          Transparent     =   False
          Underline       =   False
@@ -736,28 +735,28 @@ Begin Window Window_3DView
          Width           =   123
       End
       Begin Slider Slider_Ambient
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
+         AllowLiveScrolling=   True
          Enabled         =   True
          Height          =   16
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Left            =   568
          LineStep        =   1
-         LiveScroll      =   True
          LockBottom      =   True
          LockedInPosition=   False
          LockLeft        =   False
          LockRight       =   True
          LockTop         =   False
-         Maximum         =   100
-         Minimum         =   0
+         MaximumValue    =   100
+         MinimumValue    =   0
          PageStep        =   20
          Scope           =   0
          TabIndex        =   14
          TabPanelIndex   =   1
          TabStop         =   True
-         TickStyle       =   0
+         TickMarkStyle   =   0
+         Tooltip         =   ""
          Top             =   490
          Transparent     =   False
          Value           =   50
@@ -765,14 +764,16 @@ Begin Window Window_3DView
          Width           =   123
       End
       Begin CheckBox CheckBox_Flood
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          Caption         =   "Flood Light"
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   29
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -787,9 +788,7 @@ Begin Window Window_3DView
          TabIndex        =   15
          TabPanelIndex   =   1
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   454
          Transparent     =   False
          Underline       =   False
@@ -798,28 +797,28 @@ Begin Window Window_3DView
          Width           =   109
       End
       Begin Slider Slider_Flood
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
+         AllowLiveScrolling=   True
          Enabled         =   True
          Height          =   16
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Left            =   585
          LineStep        =   1
-         LiveScroll      =   True
          LockBottom      =   True
          LockedInPosition=   False
          LockLeft        =   False
          LockRight       =   True
          LockTop         =   False
-         Maximum         =   100
-         Minimum         =   0
+         MaximumValue    =   100
+         MinimumValue    =   0
          PageStep        =   20
          Scope           =   0
          TabIndex        =   16
          TabPanelIndex   =   1
          TabStop         =   True
-         TickStyle       =   0
+         TickMarkStyle   =   0
+         Tooltip         =   ""
          Top             =   460
          Transparent     =   False
          Value           =   50
@@ -827,13 +826,15 @@ Begin Window Window_3DView
          Width           =   123
       End
       Begin Label StaticText30
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -850,11 +851,9 @@ Begin Window Window_3DView
          TabPanelIndex   =   1
          TabStop         =   True
          Text            =   "Sky Color"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   392
          Transparent     =   False
          Underline       =   False
@@ -862,13 +861,12 @@ Begin Window Window_3DView
          Width           =   66
       End
       Begin Rectangle Rectangle_SkyColour
-         AutoDeactivate  =   True
-         BorderWidth     =   1.0
+         AllowAutoDeactivate=   True
+         BorderThickness =   1.0
          BottomRightColor=   &c00000000
          Enabled         =   True
          FillColor       =   &c00000000
          Height          =   17
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Left            =   681
@@ -881,6 +879,7 @@ Begin Window Window_3DView
          TabIndex        =   18
          TabPanelIndex   =   1
          TabStop         =   "True"
+         Tooltip         =   ""
          Top             =   393
          TopLeftColor    =   &c00000000
          Transparent     =   False
@@ -888,28 +887,28 @@ Begin Window Window_3DView
          Width           =   33
       End
       Begin Slider Slider_Image
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
+         AllowLiveScrolling=   True
          Enabled         =   True
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Left            =   143
          LineStep        =   1
-         LiveScroll      =   True
          LockBottom      =   True
          LockedInPosition=   False
          LockLeft        =   True
          LockRight       =   False
          LockTop         =   False
-         Maximum         =   10
-         Minimum         =   0
+         MaximumValue    =   10
+         MinimumValue    =   0
          PageStep        =   1
          Scope           =   0
          TabIndex        =   19
          TabPanelIndex   =   1
          TabStop         =   True
-         TickStyle       =   0
+         TickMarkStyle   =   0
+         Tooltip         =   ""
          Top             =   407
          Transparent     =   False
          Value           =   0
@@ -917,14 +916,16 @@ Begin Window Window_3DView
          Width           =   150
       End
       Begin CheckBox CheckBox_Images
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          Caption         =   "Images"
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -935,43 +936,41 @@ Begin Window Window_3DView
          LockRight       =   False
          LockTop         =   False
          Scope           =   0
-         State           =   0
          TabIndex        =   20
          TabPanelIndex   =   1
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   407
          Transparent     =   False
          Underline       =   False
          Value           =   False
          Visible         =   True
+         VisualState     =   0
          Width           =   100
       End
       Begin Slider Slider_MLC_Field
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
+         AllowLiveScrolling=   True
          Enabled         =   True
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Left            =   143
          LineStep        =   1
-         LiveScroll      =   True
          LockBottom      =   True
          LockedInPosition=   False
          LockLeft        =   True
          LockRight       =   False
          LockTop         =   False
-         Maximum         =   100
-         Minimum         =   0
+         MaximumValue    =   100
+         MinimumValue    =   0
          PageStep        =   20
          Scope           =   0
          TabIndex        =   21
          TabPanelIndex   =   1
          TabStop         =   True
-         TickStyle       =   0
+         TickMarkStyle   =   0
+         Tooltip         =   ""
          Top             =   562
          Transparent     =   False
          Value           =   0
@@ -979,14 +978,16 @@ Begin Window Window_3DView
          Width           =   150
       End
       Begin CheckBox CheckBox_Floor
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          Caption         =   "Floor Plane"
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   29
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -1001,9 +1002,7 @@ Begin Window Window_3DView
          TabIndex        =   22
          TabPanelIndex   =   1
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   521
          Transparent     =   False
          Underline       =   False
@@ -1012,31 +1011,32 @@ Begin Window Window_3DView
          Width           =   109
       End
       Begin TextField EditField_Nz
-         AcceptTabs      =   False
-         Alignment       =   0
-         AutoDeactivate  =   True
-         AutomaticallyCheckSpelling=   False
-         BackColor       =   &cFFFFFF00
+         AllowAutoDeactivate=   True
+         AllowFocusRing  =   True
+         AllowSpellChecking=   False
+         AllowTabs       =   False
+         BackgroundColor =   &cFFFFFF00
          Bold            =   False
-         Border          =   True
-         CueText         =   ""
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Format          =   ""
+         HasBorder       =   True
          Height          =   20
-         HelpTag         =   ""
+         Hint            =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
          Left            =   315
-         LimitText       =   4
          LockBottom      =   True
          LockedInPosition=   False
          LockLeft        =   True
          LockRight       =   False
          LockTop         =   False
-         Mask            =   ""
+         MaximumCharactersAllowed=   4
          Password        =   False
          ReadOnly        =   False
          Scope           =   0
@@ -1044,14 +1044,13 @@ Begin Window Window_3DView
          TabPanelIndex   =   1
          TabStop         =   True
          Text            =   "0"
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   406
          Transparent     =   False
          Underline       =   False
-         UseFocusRing    =   True
+         ValidationMask  =   ""
          Visible         =   True
          Width           =   75
       End

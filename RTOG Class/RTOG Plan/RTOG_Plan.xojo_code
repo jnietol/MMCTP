@@ -340,6 +340,7 @@ Protected Class RTOG_Plan
 		    
 		    
 		    
+		    
 		    for x=0 to UBound(RT_Plan.FractionGroupSequence)
 		      for k=0 to UBound(RT_Plan.FractionGroupSequence(x).Referencedbeamsequence)
 		        if RT_Plan.FractionGroupSequence(x).Referencedbeamsequence(k).Referencedbeamnumber=one_beam.Beam_Num Then
@@ -409,12 +410,21 @@ Protected Class RTOG_Plan
 		    for x=0 to UBound(bs.ControlPointSequence)
 		      if x=0 Then // For normal Static Beam info
 		        
+		        one_beam.Collimator.fields(0).Node_X=val(NthField(bs.ControlPointSequence(x).GantryPosition,"\",1))/10
+		        one_beam.Collimator.fields(0).Node_y=val(NthField(bs.ControlPointSequence(x).GantryPosition,"\",2))/10
+		        one_beam.Collimator.fields(0).Node_z=val(NthField(bs.ControlPointSequence(x).GantryPosition,"\",3))/10
+		        
+		        
 		        isopoint.X = val(NthField(bs.ControlPointSequence(x).IsocenterPosition,"\",1))/10
 		        isopoint.y = val(NthField(bs.ControlPointSequence(x).IsocenterPosition,"\",2))/10
 		        
 		        // Apply cosine and image offset
 		        isopoint.X =xx*isopoint.X
 		        isopoint.y =yy*isopoint.y
+		        one_beam.Collimator.fields(0).Node_X=xx*one_beam.Collimator.fields(0).Node_X
+		        one_beam.Collimator.fields(0).Node_y=yy*one_beam.Collimator.fields(0).Node_Y
+		        
+		        
 		        isopoint.z = val(NthField(bs.ControlPointSequence(x).IsocenterPosition,"\",3))/10
 		        one_beam.Collimator.fields(0).Gantry_Angle=bs.ControlPointSequence(x).GantryAngle
 		        one_beam.Collimator.fields(0).Collimator_Angle=bs.ControlPointSequence(x).Beamlimitngdeviceangle

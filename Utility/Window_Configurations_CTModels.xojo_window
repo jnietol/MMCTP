@@ -1,37 +1,38 @@
 #tag Window
 Begin Window Window_Configurations_CTModels
-   BackColor       =   &cFFFFFF00
    Backdrop        =   0
-   CloseButton     =   True
+   BackgroundColor =   &cFFFFFF00
    Composite       =   False
-   Frame           =   1
+   DefaultLocation =   0
    FullScreen      =   False
-   FullScreenButton=   False
-   HasBackColor    =   False
+   HasBackgroundColor=   False
+   HasCloseButton  =   True
+   HasFullScreenButton=   False
+   HasMaximizeButton=   False
+   HasMinimizeButton=   False
    Height          =   505
    ImplicitInstance=   True
-   LiveResize      =   "True"
    MacProcID       =   0
-   MaxHeight       =   32000
-   MaximizeButton  =   False
-   MaxWidth        =   32000
+   MaximumHeight   =   32000
+   MaximumWidth    =   32000
    MenuBar         =   0
    MenuBarVisible  =   True
-   MinHeight       =   64
-   MinimizeButton  =   False
-   MinWidth        =   64
-   Placement       =   0
+   MinimumHeight   =   64
+   MinimumWidth    =   64
    Resizeable      =   True
    Title           =   "MMCTP Configurations CT models"
+   Type            =   1
    Visible         =   False
    Width           =   554
    Begin GroupBox GroupBox4
-      AutoDeactivate  =   True
+      AllowAutoDeactivate=   True
       Bold            =   False
       Caption         =   "CT Model"
       Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   0.0
+      FontUnit        =   0
       Height          =   392
-      HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
@@ -45,40 +46,39 @@ Begin Window Window_Configurations_CTModels
       TabIndex        =   1
       TabPanelIndex   =   0
       TabStop         =   True
-      TextFont        =   "System"
-      TextSize        =   0.0
-      TextUnit        =   0
+      Tooltip         =   ""
       Top             =   72
       Transparent     =   False
       Underline       =   False
       Visible         =   True
       Width           =   514
       Begin TextField EditField_CT_Name
-         AcceptTabs      =   False
-         Alignment       =   0
-         AutoDeactivate  =   True
-         AutomaticallyCheckSpelling=   False
-         BackColor       =   &cFFFFFF00
+         AllowAutoDeactivate=   True
+         AllowFocusRing  =   True
+         AllowSpellChecking=   False
+         AllowTabs       =   False
+         BackgroundColor =   &cFFFFFF00
          Bold            =   False
-         Border          =   True
-         CueText         =   ""
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Format          =   ""
+         HasBorder       =   True
          Height          =   22
-         HelpTag         =   ""
+         Hint            =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox4"
          Italic          =   False
          Left            =   186
-         LimitText       =   0
          LockBottom      =   False
          LockedInPosition=   False
          LockLeft        =   False
          LockRight       =   False
          LockTop         =   False
-         Mask            =   ""
+         MaximumCharactersAllowed=   0
          Password        =   False
          ReadOnly        =   False
          Scope           =   0
@@ -86,25 +86,26 @@ Begin Window Window_Configurations_CTModels
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   ""
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   92
          Transparent     =   False
          Underline       =   False
-         UseFocusRing    =   True
+         ValidationMask  =   ""
          Visible         =   True
          Width           =   160
       End
       Begin Label StaticText42
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox4"
          Italic          =   False
@@ -121,11 +122,9 @@ Begin Window Window_Configurations_CTModels
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Name"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   94
          Transparent     =   False
          Underline       =   False
@@ -133,13 +132,15 @@ Begin Window Window_Configurations_CTModels
          Width           =   100
       End
       Begin Label StaticText43
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   12.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox4"
          Italic          =   False
@@ -156,11 +157,9 @@ Begin Window Window_Configurations_CTModels
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Pegs file"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   12.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   120
          Transparent     =   False
          Underline       =   False
@@ -168,31 +167,32 @@ Begin Window Window_Configurations_CTModels
          Width           =   74
       End
       Begin TextField EditField_CT_Pegs
-         AcceptTabs      =   False
-         Alignment       =   0
-         AutoDeactivate  =   True
-         AutomaticallyCheckSpelling=   False
-         BackColor       =   &cFFFFFF00
+         AllowAutoDeactivate=   True
+         AllowFocusRing  =   True
+         AllowSpellChecking=   False
+         AllowTabs       =   False
+         BackgroundColor =   &cFFFFFF00
          Bold            =   False
-         Border          =   True
-         CueText         =   ""
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   12.0
+         FontUnit        =   0
          Format          =   ""
+         HasBorder       =   True
          Height          =   22
-         HelpTag         =   ""
+         Hint            =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox4"
          Italic          =   False
          Left            =   186
-         LimitText       =   0
          LockBottom      =   False
          LockedInPosition=   False
          LockLeft        =   False
          LockRight       =   False
          LockTop         =   False
-         Mask            =   ""
+         MaximumCharactersAllowed=   0
          Password        =   False
          ReadOnly        =   False
          Scope           =   0
@@ -200,43 +200,43 @@ Begin Window Window_Configurations_CTModels
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   ""
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   12.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   120
          Transparent     =   False
          Underline       =   False
-         UseFocusRing    =   True
+         ValidationMask  =   ""
          Visible         =   True
          Width           =   160
       End
       Begin TextField EditField_CT_Material_Num
-         AcceptTabs      =   False
-         Alignment       =   0
-         AutoDeactivate  =   True
-         AutomaticallyCheckSpelling=   False
-         BackColor       =   &cFFFFFF00
+         AllowAutoDeactivate=   True
+         AllowFocusRing  =   True
+         AllowSpellChecking=   False
+         AllowTabs       =   False
+         BackgroundColor =   &cFFFFFF00
          Bold            =   False
-         Border          =   True
-         CueText         =   ""
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   12.0
+         FontUnit        =   0
          Format          =   ""
+         HasBorder       =   True
          Height          =   22
-         HelpTag         =   ""
+         Hint            =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox4"
          Italic          =   False
          Left            =   186
-         LimitText       =   0
          LockBottom      =   False
          LockedInPosition=   False
          LockLeft        =   False
          LockRight       =   False
          LockTop         =   False
-         Mask            =   ""
+         MaximumCharactersAllowed=   0
          Password        =   False
          ReadOnly        =   False
          Scope           =   0
@@ -244,25 +244,26 @@ Begin Window Window_Configurations_CTModels
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   ""
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   12.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   150
          Transparent     =   False
          Underline       =   False
-         UseFocusRing    =   True
+         ValidationMask  =   ""
          Visible         =   True
          Width           =   160
       End
       Begin Label StaticText44
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   12.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox4"
          Italic          =   False
@@ -279,11 +280,9 @@ Begin Window Window_Configurations_CTModels
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Number of Materials"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   12.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   152
          Transparent     =   False
          Underline       =   False
@@ -291,27 +290,32 @@ Begin Window Window_Configurations_CTModels
          Width           =   119
       End
       Begin Listbox Listbox_CT_Materials
-         AutoDeactivate  =   True
-         AutoHideScrollbars=   True
+         AllowAutoDeactivate=   True
+         AllowAutoHideScrollbars=   True
+         AllowExpandableRows=   False
+         AllowFocusRing  =   True
+         AllowResizableColumns=   False
+         AllowRowDragging=   False
+         AllowRowReordering=   False
          Bold            =   False
-         Border          =   True
          ColumnCount     =   5
-         ColumnsResizable=   False
          ColumnWidths    =   ""
          DataField       =   ""
          DataSource      =   ""
          DefaultRowHeight=   -1
          DropIndicatorVisible=   False
          Enabled         =   True
-         EnableDrag      =   False
-         EnableDragReorder=   False
-         GridLinesHorizontal=   0
-         GridLinesVertical=   0
-         HasHeading      =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
+         GridLinesHorizontalStyle=   0
+         GridLinesVerticalStyle=   0
+         HasBorder       =   True
+         HasHeader       =   True
+         HasHorizontalScrollbar=   False
+         HasVerticalScrollbar=   True
          HeadingIndex    =   -1
          Height          =   258
-         HelpTag         =   ""
-         Hierarchical    =   False
          Index           =   -2147483648
          InitialParent   =   "GroupBox4"
          InitialValue    =   ""
@@ -323,20 +327,15 @@ Begin Window Window_Configurations_CTModels
          LockRight       =   True
          LockTop         =   True
          RequiresSelection=   False
+         RowSelectionType=   0
          Scope           =   0
-         ScrollbarHorizontal=   False
-         ScrollBarVertical=   True
-         SelectionType   =   0
          TabIndex        =   7
          TabPanelIndex   =   0
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   191
          Transparent     =   False
          Underline       =   False
-         UseFocusRing    =   True
          Visible         =   True
          Width           =   486
          _ScrollOffset   =   0
@@ -344,25 +343,26 @@ Begin Window Window_Configurations_CTModels
       End
    End
    Begin BevelButton BevelButton_DelModel
-      AcceptFocus     =   False
-      AutoDeactivate  =   True
-      BackColor       =   &c00000000
-      Bevel           =   0
+      AllowAutoDeactivate=   True
+      AllowFocus      =   False
+      BackgroundColor =   &c00000000
+      BevelStyle      =   0
       Bold            =   False
-      ButtonType      =   0
+      ButtonStyle     =   0
       Caption         =   "Delete Model"
-      CaptionAlign    =   3
+      CaptionAlignment=   3
       CaptionDelta    =   0
-      CaptionPlacement=   1
+      CaptionPosition =   1
       Enabled         =   True
-      HasBackColor    =   False
-      HasMenu         =   0
+      FontName        =   "System"
+      FontSize        =   0.0
+      FontUnit        =   0
+      HasBackgroundColor=   False
       Height          =   22
-      HelpTag         =   ""
       Icon            =   0
-      IconAlign       =   0
-      IconDX          =   0
-      IconDY          =   0
+      IconAlignment   =   0
+      IconDeltaX      =   0
+      IconDeltaY      =   0
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
@@ -372,15 +372,14 @@ Begin Window Window_Configurations_CTModels
       LockLeft        =   False
       LockRight       =   False
       LockTop         =   False
+      MenuStyle       =   0
       MenuValue       =   "0"
       Scope           =   0
       TabIndex        =   2
       TabPanelIndex   =   0
       TabStop         =   True
       TextColor       =   &c00000000
-      TextFont        =   "System"
-      TextSize        =   0.0
-      TextUnit        =   0
+      Tooltip         =   ""
       Top             =   20
       Transparent     =   False
       Underline       =   False
@@ -389,31 +388,31 @@ Begin Window Window_Configurations_CTModels
       Width           =   114
    End
    Begin PopupMenu PopupMenu_CT_Model
-      AutoDeactivate  =   True
+      AllowAutoDeactivate=   True
       Bold            =   False
       DataField       =   ""
       DataSource      =   ""
       Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   0.0
+      FontUnit        =   0
       Height          =   20
-      HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
       InitialValue    =   ""
       Italic          =   False
       Left            =   148
-      ListIndex       =   0
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   False
       LockRight       =   False
       LockTop         =   False
       Scope           =   0
+      SelectedRowIndex=   0
       TabIndex        =   3
       TabPanelIndex   =   0
       TabStop         =   True
-      TextFont        =   "System"
-      TextSize        =   0.0
-      TextUnit        =   0
+      Tooltip         =   ""
       Top             =   22
       Transparent     =   False
       Underline       =   False
@@ -421,13 +420,15 @@ Begin Window Window_Configurations_CTModels
       Width           =   148
    End
    Begin Label StaticText41
-      AutoDeactivate  =   True
+      AllowAutoDeactivate=   True
       Bold            =   False
       DataField       =   ""
       DataSource      =   ""
       Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   0.0
+      FontUnit        =   0
       Height          =   20
-      HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
@@ -444,11 +445,9 @@ Begin Window Window_Configurations_CTModels
       TabPanelIndex   =   0
       TabStop         =   True
       Text            =   "Model name"
-      TextAlign       =   0
+      TextAlignment   =   0
       TextColor       =   &c00000000
-      TextFont        =   "System"
-      TextSize        =   0.0
-      TextUnit        =   0
+      Tooltip         =   ""
       Top             =   22
       Transparent     =   False
       Underline       =   False
@@ -456,15 +455,16 @@ Begin Window Window_Configurations_CTModels
       Width           =   100
    End
    Begin PushButton PushButton1
-      AutoDeactivate  =   True
+      AllowAutoDeactivate=   True
       Bold            =   False
-      ButtonStyle     =   0
       Cancel          =   False
       Caption         =   "Close"
       Default         =   False
       Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   0.0
+      FontUnit        =   0
       Height          =   20
-      HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
@@ -474,13 +474,12 @@ Begin Window Window_Configurations_CTModels
       LockLeft        =   True
       LockRight       =   False
       LockTop         =   True
+      MacButtonStyle  =   0
       Scope           =   0
       TabIndex        =   5
       TabPanelIndex   =   0
       TabStop         =   True
-      TextFont        =   "System"
-      TextSize        =   0.0
-      TextUnit        =   0
+      Tooltip         =   ""
       Top             =   476
       Transparent     =   False
       Underline       =   False
@@ -518,9 +517,9 @@ End
 
 	#tag MenuHandler
 		Function Untitled() As Boolean Handles Untitled.Action
-			
-			Return True
-			
+		  
+		  Return True
+		  
 		End Function
 	#tag EndMenuHandler
 

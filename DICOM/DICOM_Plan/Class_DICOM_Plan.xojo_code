@@ -648,7 +648,7 @@ Protected Class Class_DICOM_Plan
 			Group="Behavior"
 			InitialValue=""
 			Type="String"
-			EditorType=""
+			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="MediaStorageSOPClassUID"
@@ -656,7 +656,7 @@ Protected Class Class_DICOM_Plan
 			Group="Behavior"
 			InitialValue=""
 			Type="String"
-			EditorType=""
+			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="TransferSyntaxUID"
@@ -664,7 +664,7 @@ Protected Class Class_DICOM_Plan
 			Group="Behavior"
 			InitialValue=""
 			Type="string"
-			EditorType=""
+			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 	#tag EndViewBehavior
 End Class

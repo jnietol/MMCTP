@@ -29,6 +29,10 @@ Protected Class Class_DICOM_Plan_ControlPointSequence
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
+		GantryPosition As String
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
 		GantryRotationDirection As String
 	#tag EndProperty
 
@@ -183,8 +187,8 @@ Protected Class Class_DICOM_Plan_ControlPointSequence
 			Visible=false
 			Group="Behavior"
 			InitialValue="0"
-			Type="single"
-			EditorType=""
+			Type="String"
+			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="PatientSupportAngle"
@@ -281,6 +285,14 @@ Protected Class Class_DICOM_Plan_ControlPointSequence
 			InitialValue="0"
 			Type="Integer"
 			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="GantryPosition"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="String"
+			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 	#tag EndViewBehavior
 End Class

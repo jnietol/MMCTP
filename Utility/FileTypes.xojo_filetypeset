@@ -7,7 +7,7 @@
 		MacType=TEXT
 		Name=text
 		UTI=
-		UTIConformsTo=,public.data
+		UTIConformsTo=, public.data
 		Description=
 		MimeType=
 		Imported=True
@@ -24,7 +24,7 @@
 		MacType=????
 		Name=any
 		UTI=
-		UTIConformsTo=,public.data
+		UTIConformsTo=, public.data
 		Description=
 		MimeType=
 		Imported=True
@@ -40,7 +40,7 @@
 		MacType=
 		Name=egsinp
 		UTI=
-		UTIConformsTo=,public.data
+		UTIConformsTo=, public.data
 		Description=
 		MimeType=
 		Imported=True
@@ -56,7 +56,7 @@
 		MacType=JPEG
 		Name=image/jpeg
 		UTI=
-		UTIConformsTo=,public.data
+		UTIConformsTo=, public.data
 		Description=
 		MimeType=
 		Imported=True

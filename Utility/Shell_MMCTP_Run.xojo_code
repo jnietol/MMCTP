@@ -328,10 +328,15 @@ Inherits Shell
 		    end
 		  end
 		  
-		  Backend = "cshrc"
-		  Backend = "bash"
+		  
 		  
 		  Execute tmpstr
+		  
+		  If me.ExitCode = 0 Then
+		    //TextField1.Text= s.Result
+		  Else
+		    MessageBox("Error within MMCTP Shell: Error code: " +me.ErrorCode.ToString)
+		  End If
 		  
 		  if all(0).shell.OS=3 Then
 		    WriteLine "cd "+all(0).dir

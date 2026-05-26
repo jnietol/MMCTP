@@ -1,38 +1,39 @@
 #tag Window
 Begin Window Window_About
-   BackColor       =   &cFFFFFF00
    Backdrop        =   0
-   CloseButton     =   True
+   BackgroundColor =   &cFFFFFF00
    Composite       =   False
-   Frame           =   0
+   DefaultLocation =   0
    FullScreen      =   False
-   FullScreenButton=   False
-   HasBackColor    =   True
+   HasBackgroundColor=   True
+   HasCloseButton  =   True
+   HasFullScreenButton=   False
+   HasMaximizeButton=   False
+   HasMinimizeButton=   False
    Height          =   368
    ImplicitInstance=   True
-   LiveResize      =   "False"
    MacProcID       =   0
-   MaxHeight       =   32000
-   MaximizeButton  =   False
-   MaxWidth        =   32000
+   MaximumHeight   =   32000
+   MaximumWidth    =   32000
    MenuBar         =   0
    MenuBarVisible  =   True
-   MinHeight       =   64
-   MinimizeButton  =   False
-   MinWidth        =   64
-   Placement       =   0
+   MinimumHeight   =   64
+   MinimumWidth    =   64
    Resizeable      =   False
    Title           =   "About MMCTP"
+   Type            =   0
    Visible         =   True
    Width           =   516
    Begin Label StaticText_BuildLabel
-      AutoDeactivate  =   True
+      AllowAutoDeactivate=   True
       Bold            =   True
       DataField       =   ""
       DataSource      =   ""
       Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   10.0
+      FontUnit        =   0
       Height          =   41
-      HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
@@ -49,11 +50,9 @@ Begin Window Window_About
       TabPanelIndex   =   0
       TabStop         =   True
       Text            =   "Label:"
-      TextAlign       =   0
+      TextAlignment   =   0
       TextColor       =   &c00000000
-      TextFont        =   "System"
-      TextSize        =   10.0
-      TextUnit        =   0
+      Tooltip         =   ""
       Top             =   270
       Transparent     =   False
       Underline       =   False
@@ -61,15 +60,14 @@ Begin Window Window_About
       Width           =   154
    End
    Begin Canvas canvas_Slide
-      AcceptFocus     =   False
-      AcceptTabs      =   False
-      AutoDeactivate  =   True
+      AllowAutoDeactivate=   True
+      AllowFocus      =   False
+      AllowFocusRing  =   True
+      AllowTabs       =   False
       Backdrop        =   0
       DoubleBuffer    =   False
       Enabled         =   True
-      EraseBackground =   "True"
       Height          =   256
-      HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
       Left            =   5
@@ -82,30 +80,31 @@ Begin Window Window_About
       TabIndex        =   1
       TabPanelIndex   =   0
       TabStop         =   True
+      Tooltip         =   ""
       Top             =   5
       Transparent     =   True
-      UseFocusRing    =   True
       Visible         =   True
       Width           =   505
    End
    Begin Timer Timer1
-      Enabled         =   True
       Index           =   -2147483648
       InitialParent   =   ""
       LockedInPosition=   False
-      Mode            =   2
       Period          =   20
+      RunMode         =   2
       Scope           =   0
       TabPanelIndex   =   0
    End
    Begin Label StaticText_CR
-      AutoDeactivate  =   True
+      AllowAutoDeactivate=   True
       Bold            =   False
       DataField       =   ""
       DataSource      =   ""
       Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   10.0
+      FontUnit        =   0
       Height          =   25
-      HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
@@ -122,11 +121,9 @@ Begin Window Window_About
       TabPanelIndex   =   0
       TabStop         =   True
       Text            =   "MMCTP GUI by: Andrew Alexander © 2011"
-      TextAlign       =   0
+      TextAlignment   =   0
       TextColor       =   &c00000000
-      TextFont        =   "System"
-      TextSize        =   10.0
-      TextUnit        =   0
+      Tooltip         =   ""
       Top             =   270
       Transparent     =   False
       Underline       =   False
@@ -134,13 +131,15 @@ Begin Window Window_About
       Width           =   201
    End
    Begin Label StaticText_MPU
-      AutoDeactivate  =   True
+      AllowAutoDeactivate=   True
       Bold            =   False
       DataField       =   ""
       DataSource      =   ""
       Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   10.0
+      FontUnit        =   0
       Height          =   20
-      HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
@@ -157,11 +156,9 @@ Begin Window Window_About
       TabPanelIndex   =   0
       TabStop         =   True
       Text            =   "McGill Medical Physics Unit"
-      TextAlign       =   0
+      TextAlignment   =   0
       TextColor       =   &c2B3C9A00
-      TextFont        =   "System"
-      TextSize        =   10.0
-      TextUnit        =   0
+      Tooltip         =   ""
       Top             =   296
       Transparent     =   False
       Underline       =   True
@@ -169,13 +166,15 @@ Begin Window Window_About
       Width           =   185
    End
    Begin Label StaticText_BugReport
-      AutoDeactivate  =   True
+      AllowAutoDeactivate=   True
       Bold            =   False
       DataField       =   ""
       DataSource      =   ""
       Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   10.0
+      FontUnit        =   0
       Height          =   20
-      HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
@@ -192,11 +191,9 @@ Begin Window Window_About
       TabPanelIndex   =   0
       TabStop         =   True
       Text            =   "Bug Report and Feature Requests"
-      TextAlign       =   0
+      TextAlignment   =   0
       TextColor       =   &c2B3C9A00
-      TextFont        =   "System"
-      TextSize        =   10.0
-      TextUnit        =   0
+      Tooltip         =   ""
       Top             =   315
       Transparent     =   False
       Underline       =   True
@@ -204,13 +201,15 @@ Begin Window Window_About
       Width           =   185
    End
    Begin Label StaticText_URL
-      AutoDeactivate  =   True
+      AllowAutoDeactivate=   True
       Bold            =   False
       DataField       =   ""
       DataSource      =   ""
       Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   10.0
+      FontUnit        =   0
       Height          =   20
-      HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
@@ -227,11 +226,9 @@ Begin Window Window_About
       TabPanelIndex   =   0
       TabStop         =   True
       Text            =   "Online Documentation"
-      TextAlign       =   0
+      TextAlignment   =   0
       TextColor       =   &c2B3C9A00
-      TextFont        =   "System"
-      TextSize        =   10.0
-      TextUnit        =   0
+      Tooltip         =   ""
       Top             =   339
       Transparent     =   False
       Underline       =   True

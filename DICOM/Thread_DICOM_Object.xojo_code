@@ -7715,6 +7715,18 @@ Inherits Thread
 
 	#tag ViewBehavior
 		#tag ViewProperty
+			Name="Type"
+			Visible=true
+			Group="Behavior"
+			InitialValue="0"
+			Type="Types"
+			EditorType="Enum"
+			#tag EnumValues
+				"0 - Cooperative"
+				"1 - Preemptive"
+			#tag EndEnumValues
+		#tag EndViewProperty
+		#tag ViewProperty
 			Name="Counter"
 			Visible=false
 			Group="Behavior"

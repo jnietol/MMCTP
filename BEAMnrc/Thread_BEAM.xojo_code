@@ -516,6 +516,12 @@ Inherits Thread
 		    Return False
 		  end
 		  
+		  
+		  if Beams=nil then
+		    Return False
+		  end
+		  
+		  
 		  if Beams(beam).Beamnrc_error Then
 		    Return False
 		  end
@@ -2332,6 +2338,18 @@ Inherits Thread
 
 	#tag ViewBehavior
 		#tag ViewProperty
+			Name="Type"
+			Visible=true
+			Group="Behavior"
+			InitialValue="0"
+			Type="Types"
+			EditorType="Enum"
+			#tag EnumValues
+				"0 - Cooperative"
+				"1 - Preemptive"
+			#tag EndEnumValues
+		#tag EndViewProperty
+		#tag ViewProperty
 			Name="egs_addphsp"
 			Visible=false
 			Group="Behavior"
@@ -2569,6 +2587,14 @@ Inherits Thread
 			Group="ID"
 			InitialValue=""
 			Type="String"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="PhaseSpace"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="SQLiteDatabase"
 			EditorType=""
 		#tag EndViewProperty
 	#tag EndViewBehavior

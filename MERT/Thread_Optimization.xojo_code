@@ -998,6 +998,18 @@ Inherits Thread
 
 	#tag ViewBehavior
 		#tag ViewProperty
+			Name="Type"
+			Visible=true
+			Group="Behavior"
+			InitialValue="0"
+			Type="Types"
+			EditorType="Enum"
+			#tag EnumValues
+				"0 - Cooperative"
+				"1 - Preemptive"
+			#tag EndEnumValues
+		#tag EndViewProperty
+		#tag ViewProperty
 			Name="dvh_bin"
 			Visible=false
 			Group="Behavior"
@@ -1107,6 +1119,14 @@ Inherits Thread
 			Group="ID"
 			InitialValue=""
 			Type="String"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="Results"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="SQLiteDatabase"
 			EditorType=""
 		#tag EndViewProperty
 	#tag EndViewBehavior

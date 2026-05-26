@@ -1,37 +1,38 @@
 #tag Window
 Begin Window Window_VMC_Properties
-   BackColor       =   &cFFFFFF00
    Backdrop        =   0
-   CloseButton     =   True
+   BackgroundColor =   &cFFFFFF00
    Composite       =   False
-   Frame           =   1
+   DefaultLocation =   0
    FullScreen      =   False
-   FullScreenButton=   False
-   HasBackColor    =   False
+   HasBackgroundColor=   False
+   HasCloseButton  =   True
+   HasFullScreenButton=   False
+   HasMaximizeButton=   False
+   HasMinimizeButton=   True
    Height          =   500
    ImplicitInstance=   True
-   LiveResize      =   "False"
    MacProcID       =   0
-   MaxHeight       =   32000
-   MaximizeButton  =   False
-   MaxWidth        =   32000
+   MaximumHeight   =   32000
+   MaximumWidth    =   32000
    MenuBar         =   0
    MenuBarVisible  =   True
-   MinHeight       =   64
-   MinimizeButton  =   True
-   MinWidth        =   64
-   Placement       =   0
+   MinimumHeight   =   64
+   MinimumWidth    =   64
    Resizeable      =   True
    Title           =   "VMC Properties"
+   Type            =   1
    Visible         =   True
    Width           =   866
    Begin GroupBox GroupBox_BeamProperties
-      AutoDeactivate  =   True
+      AllowAutoDeactivate=   True
       Bold            =   False
       Caption         =   "Beam Properties"
       Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   0.0
+      FontUnit        =   0
       Height          =   375
-      HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
@@ -45,22 +46,22 @@ Begin Window Window_VMC_Properties
       TabIndex        =   0
       TabPanelIndex   =   0
       TabStop         =   True
-      TextFont        =   "System"
-      TextSize        =   0.0
-      TextUnit        =   0
+      Tooltip         =   ""
       Top             =   14
       Transparent     =   False
       Underline       =   False
       Visible         =   True
       Width           =   414
       Begin Label StaticText1
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_BeamProperties"
          Italic          =   False
@@ -77,11 +78,9 @@ Begin Window Window_VMC_Properties
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Beam ID"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   46
          Transparent     =   False
          Underline       =   False
@@ -89,13 +88,15 @@ Begin Window Window_VMC_Properties
          Width           =   100
       End
       Begin Label StaticText4
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_BeamProperties"
          Italic          =   False
@@ -112,11 +113,9 @@ Begin Window Window_VMC_Properties
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Beam Energy"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   84
          Transparent     =   False
          Underline       =   False
@@ -124,13 +123,15 @@ Begin Window Window_VMC_Properties
          Width           =   100
       End
       Begin Label StaticText5
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_BeamProperties"
          Italic          =   False
@@ -147,11 +148,9 @@ Begin Window Window_VMC_Properties
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Linac Name"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   116
          Transparent     =   False
          Underline       =   False
@@ -159,13 +158,15 @@ Begin Window Window_VMC_Properties
          Width           =   100
       End
       Begin Label StaticText6
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_BeamProperties"
          Italic          =   False
@@ -182,11 +183,9 @@ Begin Window Window_VMC_Properties
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Jaw Opening cm^2"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   156
          Transparent     =   False
          Underline       =   False
@@ -194,13 +193,15 @@ Begin Window Window_VMC_Properties
          Width           =   119
       End
       Begin Label StaticText_beamid
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   23
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_BeamProperties"
          Italic          =   False
@@ -217,11 +218,9 @@ Begin Window Window_VMC_Properties
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Untitled"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   45
          Transparent     =   False
          Underline       =   False
@@ -229,13 +228,15 @@ Begin Window Window_VMC_Properties
          Width           =   100
       End
       Begin Label StaticText_beam_energy
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   23
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_BeamProperties"
          Italic          =   False
@@ -252,11 +253,9 @@ Begin Window Window_VMC_Properties
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Untitled"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   83
          Transparent     =   False
          Underline       =   False
@@ -264,13 +263,15 @@ Begin Window Window_VMC_Properties
          Width           =   100
       End
       Begin Label StaticText_beam_linac
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   23
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_BeamProperties"
          Italic          =   False
@@ -287,11 +288,9 @@ Begin Window Window_VMC_Properties
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Untitled"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   121
          Transparent     =   False
          Underline       =   False
@@ -299,13 +298,15 @@ Begin Window Window_VMC_Properties
          Width           =   100
       End
       Begin Label StaticText_beam_field
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   23
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_BeamProperties"
          Italic          =   False
@@ -322,11 +323,9 @@ Begin Window Window_VMC_Properties
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Untitled"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   159
          Transparent     =   False
          Underline       =   False
@@ -334,13 +333,15 @@ Begin Window Window_VMC_Properties
          Width           =   100
       End
       Begin Label StaticText8
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_BeamProperties"
          Italic          =   False
@@ -357,11 +358,9 @@ Begin Window Window_VMC_Properties
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Phase Space Number of Particles"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   194
          Transparent     =   False
          Underline       =   False
@@ -369,13 +368,15 @@ Begin Window Window_VMC_Properties
          Width           =   221
       End
       Begin Label StaticText9
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_BeamProperties"
          Italic          =   False
@@ -392,11 +393,9 @@ Begin Window Window_VMC_Properties
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Phase Space Number of Photons"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   232
          Transparent     =   False
          Underline       =   False
@@ -404,13 +403,15 @@ Begin Window Window_VMC_Properties
          Width           =   221
       End
       Begin Label StaticText_phsp_par
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   23
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_BeamProperties"
          Italic          =   False
@@ -427,11 +428,9 @@ Begin Window Window_VMC_Properties
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Untitled"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   193
          Transparent     =   False
          Underline       =   False
@@ -439,13 +438,15 @@ Begin Window Window_VMC_Properties
          Width           =   100
       End
       Begin Label StaticText_phsp_pho
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   23
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_BeamProperties"
          Italic          =   False
@@ -462,11 +463,9 @@ Begin Window Window_VMC_Properties
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Untitled"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   227
          Transparent     =   False
          Underline       =   False
@@ -474,13 +473,15 @@ Begin Window Window_VMC_Properties
          Width           =   100
       End
       Begin Label StaticText10
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_BeamProperties"
          Italic          =   False
@@ -497,11 +498,9 @@ Begin Window Window_VMC_Properties
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Percentage of Photons"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   275
          Transparent     =   False
          Underline       =   False
@@ -509,13 +508,15 @@ Begin Window Window_VMC_Properties
          Width           =   221
       End
       Begin Label StaticText_per_phot
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   23
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_BeamProperties"
          Italic          =   False
@@ -532,11 +533,9 @@ Begin Window Window_VMC_Properties
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Untitled"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   270
          Transparent     =   False
          Underline       =   False
@@ -544,13 +543,15 @@ Begin Window Window_VMC_Properties
          Width           =   100
       End
       Begin Label StaticText13
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_BeamProperties"
          Italic          =   False
@@ -567,11 +568,9 @@ Begin Window Window_VMC_Properties
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Particles per Area"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   310
          Transparent     =   False
          Underline       =   False
@@ -579,13 +578,15 @@ Begin Window Window_VMC_Properties
          Width           =   221
       End
       Begin Label StaticText_part_par_area
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   23
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_BeamProperties"
          Italic          =   False
@@ -602,11 +603,9 @@ Begin Window Window_VMC_Properties
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Untitled"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   305
          Transparent     =   False
          Underline       =   False
@@ -615,15 +614,16 @@ Begin Window Window_VMC_Properties
       End
    End
    Begin PushButton PushButton_Close
-      AutoDeactivate  =   True
+      AllowAutoDeactivate=   True
       Bold            =   False
-      ButtonStyle     =   0
       Cancel          =   False
       Caption         =   "Close"
       Default         =   False
       Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   0.0
+      FontUnit        =   0
       Height          =   20
-      HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
@@ -633,13 +633,12 @@ Begin Window Window_VMC_Properties
       LockLeft        =   False
       LockRight       =   False
       LockTop         =   False
+      MacButtonStyle  =   0
       Scope           =   0
       TabIndex        =   1
       TabPanelIndex   =   0
       TabStop         =   True
-      TextFont        =   "System"
-      TextSize        =   0.0
-      TextUnit        =   0
+      Tooltip         =   ""
       Top             =   460
       Transparent     =   False
       Underline       =   False
@@ -647,12 +646,14 @@ Begin Window Window_VMC_Properties
       Width           =   80
    End
    Begin GroupBox GroupBox_VMC
-      AutoDeactivate  =   True
+      AllowAutoDeactivate=   True
       Bold            =   False
       Caption         =   "VMC Properties"
       Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   0.0
+      FontUnit        =   0
       Height          =   434
-      HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
@@ -666,22 +667,22 @@ Begin Window Window_VMC_Properties
       TabIndex        =   2
       TabPanelIndex   =   0
       TabStop         =   True
-      TextFont        =   "System"
-      TextSize        =   0.0
-      TextUnit        =   0
+      Tooltip         =   ""
       Top             =   14
       Transparent     =   False
       Underline       =   False
       Visible         =   True
       Width           =   400
       Begin Label StaticText3
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_VMC"
          Italic          =   False
@@ -698,11 +699,9 @@ Begin Window Window_VMC_Properties
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Dose to Water"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   46
          Transparent     =   False
          Underline       =   False
@@ -710,31 +709,32 @@ Begin Window Window_VMC_Properties
          Width           =   149
       End
       Begin TextField EditField_dw
-         AcceptTabs      =   False
-         Alignment       =   0
-         AutoDeactivate  =   True
-         AutomaticallyCheckSpelling=   False
-         BackColor       =   &cFFFFFF00
+         AllowAutoDeactivate=   True
+         AllowFocusRing  =   True
+         AllowSpellChecking=   False
+         AllowTabs       =   False
+         BackgroundColor =   &cFFFFFF00
          Bold            =   False
-         Border          =   True
-         CueText         =   ""
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Format          =   ""
+         HasBorder       =   True
          Height          =   22
-         HelpTag         =   ""
+         Hint            =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_VMC"
          Italic          =   False
          Left            =   677
-         LimitText       =   0
          LockBottom      =   False
          LockedInPosition=   False
          LockLeft        =   False
          LockRight       =   False
          LockTop         =   False
-         Mask            =   ""
+         MaximumCharactersAllowed=   0
          Password        =   False
          ReadOnly        =   False
          Scope           =   0
@@ -742,27 +742,27 @@ Begin Window Window_VMC_Properties
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   ""
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   45
          Transparent     =   False
          Underline       =   False
-         UseFocusRing    =   True
+         ValidationMask  =   ""
          Visible         =   True
          Width           =   135
       End
       Begin PushButton PushButton2
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
-         ButtonStyle     =   0
          Cancel          =   False
          Caption         =   "Advanced Options"
          Default         =   False
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   30
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_VMC"
          Italic          =   False
@@ -772,13 +772,12 @@ Begin Window Window_VMC_Properties
          LockLeft        =   False
          LockRight       =   False
          LockTop         =   False
+         MacButtonStyle  =   0
          Scope           =   0
          TabIndex        =   10
          TabPanelIndex   =   0
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   401
          Transparent     =   False
          Underline       =   False
@@ -786,14 +785,16 @@ Begin Window Window_VMC_Properties
          Width           =   149
       End
       Begin CheckBox CheckBox_Simulation_Start
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          Caption         =   "Job Started"
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_VMC"
          Italic          =   False
@@ -804,30 +805,29 @@ Begin Window Window_VMC_Properties
          LockRight       =   False
          LockTop         =   True
          Scope           =   0
-         State           =   0
          TabIndex        =   1
          TabPanelIndex   =   0
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   79
          Transparent     =   False
          Underline       =   False
          Value           =   False
          Visible         =   True
+         VisualState     =   0
          Width           =   349
       End
       Begin PushButton PushButton_vmc_adddose
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
-         ButtonStyle     =   0
          Cancel          =   False
          Caption         =   "d3d to MMCTP"
          Default         =   False
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   30
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_VMC"
          Italic          =   False
@@ -837,13 +837,12 @@ Begin Window Window_VMC_Properties
          LockLeft        =   True
          LockRight       =   False
          LockTop         =   False
+         MacButtonStyle  =   0
          Scope           =   0
          TabIndex        =   19
          TabPanelIndex   =   0
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   401
          Transparent     =   False
          Underline       =   False
@@ -851,12 +850,14 @@ Begin Window Window_VMC_Properties
          Width           =   130
       End
       Begin GroupBox GroupBox1
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          Caption         =   "Shell"
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   152
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_VMC"
          Italic          =   False
@@ -870,40 +871,39 @@ Begin Window Window_VMC_Properties
          TabIndex        =   22
          TabPanelIndex   =   0
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   237
          Transparent     =   False
          Underline       =   False
          Visible         =   True
          Width           =   363
          Begin TextField EditField_caldose
-            AcceptTabs      =   False
-            Alignment       =   0
-            AutoDeactivate  =   True
-            AutomaticallyCheckSpelling=   False
-            BackColor       =   &cFFFFFF00
+            AllowAutoDeactivate=   True
+            AllowFocusRing  =   True
+            AllowSpellChecking=   False
+            AllowTabs       =   False
+            BackgroundColor =   &cFFFFFF00
             Bold            =   False
-            Border          =   True
-            CueText         =   ""
             DataField       =   ""
             DataSource      =   ""
             Enabled         =   True
+            FontName        =   "System"
+            FontSize        =   0.0
+            FontUnit        =   0
             Format          =   ""
+            HasBorder       =   True
             Height          =   22
-            HelpTag         =   ""
+            Hint            =   ""
             Index           =   -2147483648
             InitialParent   =   "GroupBox1"
             Italic          =   False
             Left            =   677
-            LimitText       =   0
             LockBottom      =   False
             LockedInPosition=   False
             LockLeft        =   False
             LockRight       =   False
             LockTop         =   False
-            Mask            =   ""
+            MaximumCharactersAllowed=   0
             Password        =   False
             ReadOnly        =   False
             Scope           =   0
@@ -911,25 +911,26 @@ Begin Window Window_VMC_Properties
             TabPanelIndex   =   0
             TabStop         =   True
             Text            =   ""
+            TextAlignment   =   0
             TextColor       =   &c00000000
-            TextFont        =   "System"
-            TextSize        =   0.0
-            TextUnit        =   0
+            Tooltip         =   ""
             Top             =   352
             Transparent     =   False
             Underline       =   False
-            UseFocusRing    =   True
+            ValidationMask  =   ""
             Visible         =   True
             Width           =   135
          End
          Begin Label StaticText2
-            AutoDeactivate  =   True
+            AllowAutoDeactivate=   True
             Bold            =   False
             DataField       =   ""
             DataSource      =   ""
             Enabled         =   True
+            FontName        =   "System"
+            FontSize        =   0.0
+            FontUnit        =   0
             Height          =   20
-            HelpTag         =   ""
             Index           =   -2147483648
             InitialParent   =   "GroupBox1"
             Italic          =   False
@@ -946,11 +947,9 @@ Begin Window Window_VMC_Properties
             TabPanelIndex   =   0
             TabStop         =   True
             Text            =   "VMC Calibration Dose"
-            TextAlign       =   0
+            TextAlignment   =   0
             TextColor       =   &c00000000
-            TextFont        =   "System"
-            TextSize        =   0.0
-            TextUnit        =   0
+            Tooltip         =   ""
             Top             =   353
             Transparent     =   False
             Underline       =   False
@@ -958,31 +957,32 @@ Begin Window Window_VMC_Properties
             Width           =   149
          End
          Begin TextField EditField_queue
-            AcceptTabs      =   False
-            Alignment       =   0
-            AutoDeactivate  =   True
-            AutomaticallyCheckSpelling=   False
-            BackColor       =   &cFFFFFF00
+            AllowAutoDeactivate=   True
+            AllowFocusRing  =   True
+            AllowSpellChecking=   False
+            AllowTabs       =   False
+            BackgroundColor =   &cFFFFFF00
             Bold            =   False
-            Border          =   True
-            CueText         =   ""
             DataField       =   ""
             DataSource      =   ""
             Enabled         =   True
+            FontName        =   "System"
+            FontSize        =   0.0
+            FontUnit        =   0
             Format          =   ""
+            HasBorder       =   True
             Height          =   22
-            HelpTag         =   ""
+            Hint            =   ""
             Index           =   -2147483648
             InitialParent   =   "GroupBox1"
             Italic          =   False
             Left            =   677
-            LimitText       =   0
             LockBottom      =   False
             LockedInPosition=   False
             LockLeft        =   False
             LockRight       =   False
             LockTop         =   False
-            Mask            =   ""
+            MaximumCharactersAllowed=   0
             Password        =   False
             ReadOnly        =   False
             Scope           =   0
@@ -990,25 +990,26 @@ Begin Window Window_VMC_Properties
             TabPanelIndex   =   0
             TabStop         =   True
             Text            =   ""
+            TextAlignment   =   0
             TextColor       =   &c00000000
-            TextFont        =   "System"
-            TextSize        =   0.0
-            TextUnit        =   0
+            Tooltip         =   ""
             Top             =   318
             Transparent     =   False
             Underline       =   False
-            UseFocusRing    =   True
+            ValidationMask  =   ""
             Visible         =   True
             Width           =   135
          End
          Begin Label StaticText12
-            AutoDeactivate  =   True
+            AllowAutoDeactivate=   True
             Bold            =   False
             DataField       =   ""
             DataSource      =   ""
             Enabled         =   True
+            FontName        =   "System"
+            FontSize        =   0.0
+            FontUnit        =   0
             Height          =   20
-            HelpTag         =   ""
             Index           =   -2147483648
             InitialParent   =   "GroupBox1"
             Italic          =   False
@@ -1025,11 +1026,9 @@ Begin Window Window_VMC_Properties
             TabPanelIndex   =   0
             TabStop         =   True
             Text            =   "Queue"
-            TextAlign       =   0
+            TextAlignment   =   0
             TextColor       =   &c00000000
-            TextFont        =   "System"
-            TextSize        =   0.0
-            TextUnit        =   0
+            Tooltip         =   ""
             Top             =   320
             Transparent     =   False
             Underline       =   False
@@ -1037,31 +1036,31 @@ Begin Window Window_VMC_Properties
             Width           =   149
          End
          Begin PopupMenu PopupMenu_Shell
-            AutoDeactivate  =   True
+            AllowAutoDeactivate=   True
             Bold            =   False
             DataField       =   ""
             DataSource      =   ""
             Enabled         =   True
+            FontName        =   "System"
+            FontSize        =   0.0
+            FontUnit        =   0
             Height          =   20
-            HelpTag         =   ""
             Index           =   -2147483648
             InitialParent   =   "GroupBox1"
             InitialValue    =   ""
             Italic          =   False
             Left            =   677
-            ListIndex       =   0
             LockBottom      =   False
             LockedInPosition=   False
             LockLeft        =   False
             LockRight       =   False
             LockTop         =   False
             Scope           =   0
+            SelectedRowIndex=   0
             TabIndex        =   4
             TabPanelIndex   =   0
             TabStop         =   True
-            TextFont        =   "System"
-            TextSize        =   0.0
-            TextUnit        =   0
+            Tooltip         =   ""
             Top             =   288
             Transparent     =   False
             Underline       =   False
@@ -1069,13 +1068,15 @@ Begin Window Window_VMC_Properties
             Width           =   135
          End
          Begin Label StaticText16
-            AutoDeactivate  =   True
+            AllowAutoDeactivate=   True
             Bold            =   False
             DataField       =   ""
             DataSource      =   ""
             Enabled         =   True
+            FontName        =   "System"
+            FontSize        =   0.0
+            FontUnit        =   0
             Height          =   20
-            HelpTag         =   ""
             Index           =   -2147483648
             InitialParent   =   "GroupBox1"
             Italic          =   False
@@ -1092,11 +1093,9 @@ Begin Window Window_VMC_Properties
             TabPanelIndex   =   0
             TabStop         =   True
             Text            =   "Shell"
-            TextAlign       =   0
+            TextAlignment   =   0
             TextColor       =   &c00000000
-            TextFont        =   "System"
-            TextSize        =   0.0
-            TextUnit        =   0
+            Tooltip         =   ""
             Top             =   288
             Transparent     =   False
             Underline       =   False
@@ -1104,14 +1103,16 @@ Begin Window Window_VMC_Properties
             Width           =   149
          End
          Begin CheckBox CheckBox_Auto_Shell
-            AutoDeactivate  =   True
+            AllowAutoDeactivate=   True
             Bold            =   False
             Caption         =   "Auto Determine"
             DataField       =   ""
             DataSource      =   ""
             Enabled         =   True
+            FontName        =   "System"
+            FontSize        =   0.0
+            FontUnit        =   0
             Height          =   20
-            HelpTag         =   ""
             Index           =   -2147483648
             InitialParent   =   "GroupBox1"
             Italic          =   False
@@ -1122,30 +1123,30 @@ Begin Window Window_VMC_Properties
             LockRight       =   False
             LockTop         =   False
             Scope           =   0
-            State           =   0
             TabIndex        =   6
             TabPanelIndex   =   0
             TabStop         =   True
-            TextFont        =   "System"
-            TextSize        =   0.0
-            TextUnit        =   0
+            Tooltip         =   ""
             Top             =   260
             Transparent     =   False
             Underline       =   False
             Value           =   False
             Visible         =   True
+            VisualState     =   0
             Width           =   125
          End
       End
       Begin CheckBox CheckBox_Downloaded_d3d
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          Caption         =   "d3d file downloaded"
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_VMC"
          Italic          =   False
@@ -1156,28 +1157,28 @@ Begin Window Window_VMC_Properties
          LockRight       =   False
          LockTop         =   True
          Scope           =   0
-         State           =   0
          TabIndex        =   23
          TabPanelIndex   =   0
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   111
          Transparent     =   False
          Underline       =   False
          Value           =   False
          Visible         =   True
+         VisualState     =   0
          Width           =   349
       End
       Begin Label StaticText_Uncertainty
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_VMC"
          Italic          =   False
@@ -1194,11 +1195,9 @@ Begin Window Window_VMC_Properties
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Uncertainty"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   177
          Transparent     =   False
          Underline       =   False
@@ -1206,13 +1205,15 @@ Begin Window Window_VMC_Properties
          Width           =   356
       End
       Begin Label StaticText_CPUTime
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_VMC"
          Italic          =   False
@@ -1229,11 +1230,9 @@ Begin Window Window_VMC_Properties
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Total CPU Time"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   209
          Transparent     =   False
          Underline       =   False
@@ -1241,14 +1240,16 @@ Begin Window Window_VMC_Properties
          Width           =   356
       End
       Begin CheckBox CheckBox_Downloaded_hed
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          Caption         =   "hed file downloaded"
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox_VMC"
          Italic          =   False
@@ -1259,18 +1260,16 @@ Begin Window Window_VMC_Properties
          LockRight       =   False
          LockTop         =   True
          Scope           =   0
-         State           =   0
          TabIndex        =   26
          TabPanelIndex   =   0
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   145
          Transparent     =   False
          Underline       =   False
          Value           =   False
          Visible         =   True
+         VisualState     =   0
          Width           =   349
       End
    End

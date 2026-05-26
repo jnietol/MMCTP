@@ -29,6 +29,18 @@ Protected Class Class_Collimator_Fields
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
+		Node_X As Single
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		Node_Y As Single
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		Node_Z As Single
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
 		X1 As single = 5
 	#tag EndProperty
 
@@ -148,6 +160,30 @@ Protected Class Class_Collimator_Fields
 			Group="Behavior"
 			InitialValue="0"
 			Type="single"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="Node_X"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Single"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="Node_Z"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Single"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="Node_Y"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Single"
 			EditorType=""
 		#tag EndViewProperty
 	#tag EndViewBehavior

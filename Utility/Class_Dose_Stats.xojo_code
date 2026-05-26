@@ -2,9 +2,9 @@
 Protected Class Class_Dose_Stats
 	#tag MenuHandler
 		Function Untitled() As Boolean Handles Untitled.Action
-			
-			Return True
-			
+		  
+		  Return True
+		  
 		End Function
 	#tag EndMenuHandler
 

@@ -1,37 +1,38 @@
 #tag Window
 Begin Window Window_BEAM_Phsp_Information
-   BackColor       =   &cFFFFFF00
    Backdrop        =   0
-   CloseButton     =   True
+   BackgroundColor =   &cFFFFFF00
    Composite       =   False
-   Frame           =   1
+   DefaultLocation =   0
    FullScreen      =   False
-   FullScreenButton=   False
-   HasBackColor    =   False
+   HasBackgroundColor=   False
+   HasCloseButton  =   True
+   HasFullScreenButton=   False
+   HasMaximizeButton=   False
+   HasMinimizeButton=   True
    Height          =   741
    ImplicitInstance=   True
-   LiveResize      =   "False"
    MacProcID       =   0
-   MaxHeight       =   32000
-   MaximizeButton  =   False
-   MaxWidth        =   32000
+   MaximumHeight   =   32000
+   MaximumWidth    =   32000
    MenuBar         =   0
    MenuBarVisible  =   True
-   MinHeight       =   64
-   MinimizeButton  =   True
-   MinWidth        =   64
-   Placement       =   0
+   MinimumHeight   =   64
+   MinimumWidth    =   64
    Resizeable      =   True
    Title           =   "Phase Space Information"
+   Type            =   1
    Visible         =   True
    Width           =   943
    Begin GroupBox GroupBox1
-      AutoDeactivate  =   True
+      AllowAutoDeactivate=   True
       Bold            =   False
       Caption         =   "Beam Properties"
       Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   0.0
+      FontUnit        =   0
       Height          =   178
-      HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
@@ -45,22 +46,22 @@ Begin Window Window_BEAM_Phsp_Information
       TabIndex        =   0
       TabPanelIndex   =   0
       TabStop         =   True
-      TextFont        =   "System"
-      TextSize        =   0.0
-      TextUnit        =   0
+      Tooltip         =   ""
       Top             =   14
       Transparent     =   False
       Underline       =   False
       Visible         =   True
       Width           =   448
       Begin Label StaticText1
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox1"
          Italic          =   False
@@ -77,11 +78,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Beam Number"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   39
          Transparent     =   False
          Underline       =   False
@@ -89,13 +88,15 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   91
       End
       Begin Label StaticText2
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox1"
          Italic          =   False
@@ -112,11 +113,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Beam Energy"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   99
          Transparent     =   False
          Underline       =   False
@@ -124,13 +123,15 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   91
       End
       Begin Label StaticText3
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox1"
          Italic          =   False
@@ -147,11 +148,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Beam Mode"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   59
          Transparent     =   False
          Underline       =   False
@@ -159,13 +158,15 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   91
       End
       Begin Label StaticText_Beam_Number
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox1"
          Italic          =   False
@@ -182,11 +183,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Untitled"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   38
          Transparent     =   False
          Underline       =   False
@@ -194,13 +193,15 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   201
       End
       Begin Label StaticText_beam_mode
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox1"
          Italic          =   False
@@ -217,11 +218,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Untitled"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   59
          Transparent     =   False
          Underline       =   False
@@ -229,13 +228,15 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   201
       End
       Begin Label StaticText_beam_energy
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox1"
          Italic          =   False
@@ -252,11 +253,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Untitled"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   99
          Transparent     =   False
          Underline       =   False
@@ -264,13 +263,15 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   201
       End
       Begin Label StaticText7
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox1"
          Italic          =   False
@@ -287,11 +288,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "X Jaws"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   119
          Transparent     =   False
          Underline       =   False
@@ -299,13 +298,15 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   61
       End
       Begin Label StaticText8
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox1"
          Italic          =   False
@@ -322,11 +323,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Wedge"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   159
          Transparent     =   False
          Underline       =   False
@@ -334,13 +333,15 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   61
       End
       Begin Label StaticText9
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox1"
          Italic          =   False
@@ -357,11 +358,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Y Jaws"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   139
          Transparent     =   False
          Underline       =   False
@@ -369,13 +368,15 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   61
       End
       Begin Label StaticText10
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox1"
          Italic          =   False
@@ -392,11 +393,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Linac Name"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   79
          Transparent     =   False
          Underline       =   False
@@ -404,13 +403,15 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   91
       End
       Begin Label StaticText_linac_name
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox1"
          Italic          =   False
@@ -427,11 +428,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Untitled"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   79
          Transparent     =   False
          Underline       =   False
@@ -439,13 +438,15 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   201
       End
       Begin Label StaticText_wedge
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox1"
          Italic          =   False
@@ -462,11 +463,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Untitled"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   159
          Transparent     =   False
          Underline       =   False
@@ -474,13 +473,15 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   201
       End
       Begin Label StaticText_yjaws
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox1"
          Italic          =   False
@@ -497,11 +498,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Untitled"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   139
          Transparent     =   False
          Underline       =   False
@@ -509,13 +508,15 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   201
       End
       Begin Label StaticText_xjaws
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox1"
          Italic          =   False
@@ -532,11 +533,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Untitled"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   119
          Transparent     =   False
          Underline       =   False
@@ -545,12 +544,14 @@ Begin Window Window_BEAM_Phsp_Information
       End
    End
    Begin GroupBox GroupBox2
-      AutoDeactivate  =   True
+      AllowAutoDeactivate=   True
       Bold            =   False
       Caption         =   "Phase Space Properties"
       Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   0.0
+      FontUnit        =   0
       Height          =   178
-      HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
@@ -564,22 +565,22 @@ Begin Window Window_BEAM_Phsp_Information
       TabIndex        =   2
       TabPanelIndex   =   0
       TabStop         =   True
-      TextFont        =   "System"
-      TextSize        =   0.0
-      TextUnit        =   0
+      Tooltip         =   ""
       Top             =   14
       Transparent     =   False
       Underline       =   False
       Visible         =   True
       Width           =   451
       Begin Label StaticText17
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox2"
          Italic          =   False
@@ -596,11 +597,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "File Name"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   39
          Transparent     =   False
          Underline       =   False
@@ -608,13 +607,15 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   138
       End
       Begin Label StaticText18
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox2"
          Italic          =   False
@@ -631,11 +632,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Phase Space Size Bytes"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   79
          Transparent     =   False
          Underline       =   False
@@ -643,13 +642,15 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   152
       End
       Begin Label StaticText19
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox2"
          Italic          =   False
@@ -666,11 +667,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Phsp Linked"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   99
          Transparent     =   False
          Underline       =   False
@@ -678,13 +677,15 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   138
       End
       Begin Label StaticText_Phsp_name
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox2"
          Italic          =   False
@@ -701,11 +702,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Untitled"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   39
          Transparent     =   False
          Underline       =   False
@@ -713,13 +712,15 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   281
       End
       Begin Label StaticText_Phsp_size
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox2"
          Italic          =   False
@@ -736,11 +737,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Untitled"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   79
          Transparent     =   False
          Underline       =   False
@@ -748,13 +747,15 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   281
       End
       Begin Label StaticText_Phsp_linkyn
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox2"
          Italic          =   False
@@ -771,11 +772,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Untitled"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   99
          Transparent     =   False
          Underline       =   False
@@ -783,13 +782,15 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   281
       End
       Begin Label StaticText_34
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox2"
          Italic          =   False
@@ -806,11 +807,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Linked file"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   119
          Transparent     =   False
          Underline       =   False
@@ -818,13 +817,15 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   138
       End
       Begin Label StaticText_Phsp_linkyname
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox2"
          Italic          =   False
@@ -841,11 +842,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Untitled"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   119
          Transparent     =   False
          Underline       =   False
@@ -853,13 +852,15 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   281
       End
       Begin Label StaticText20
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox2"
          Italic          =   False
@@ -876,11 +877,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "File Found"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   59
          Transparent     =   False
          Underline       =   False
@@ -888,13 +887,15 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   138
       End
       Begin Label StaticText_Phsp_found
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   20
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "GroupBox2"
          Italic          =   False
@@ -911,11 +912,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   0
          TabStop         =   True
          Text            =   "Untitled"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   59
          Transparent     =   False
          Underline       =   False
@@ -924,15 +923,16 @@ Begin Window Window_BEAM_Phsp_Information
       End
    End
    Begin PushButton PushButton_Close
-      AutoDeactivate  =   True
+      AllowAutoDeactivate=   True
       Bold            =   False
-      ButtonStyle     =   0
       Cancel          =   False
       Caption         =   "Close"
       Default         =   False
       Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   0.0
+      FontUnit        =   0
       Height          =   20
-      HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
@@ -942,13 +942,12 @@ Begin Window Window_BEAM_Phsp_Information
       LockLeft        =   False
       LockRight       =   False
       LockTop         =   False
+      MacButtonStyle  =   0
       Scope           =   0
       TabIndex        =   3
       TabPanelIndex   =   0
       TabStop         =   True
-      TextFont        =   "System"
-      TextSize        =   0.0
-      TextUnit        =   0
+      Tooltip         =   ""
       Top             =   701
       Transparent     =   False
       Underline       =   False
@@ -956,11 +955,13 @@ Begin Window Window_BEAM_Phsp_Information
       Width           =   80
    End
    Begin TabPanel TabPanel1
-      AutoDeactivate  =   True
+      AllowAutoDeactivate=   True
       Bold            =   False
       Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   0.0
+      FontUnit        =   0
       Height          =   485
-      HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
@@ -977,9 +978,7 @@ Begin Window Window_BEAM_Phsp_Information
       TabIndex        =   4
       TabPanelIndex   =   0
       TabStop         =   True
-      TextFont        =   "System"
-      TextSize        =   0.0
-      TextUnit        =   0
+      Tooltip         =   ""
       Top             =   204
       Transparent     =   False
       Underline       =   False
@@ -987,27 +986,32 @@ Begin Window Window_BEAM_Phsp_Information
       Visible         =   True
       Width           =   911
       Begin ListBox ListBox_Phspfiles
-         AutoDeactivate  =   True
-         AutoHideScrollbars=   True
+         AllowAutoDeactivate=   True
+         AllowAutoHideScrollbars=   True
+         AllowExpandableRows=   False
+         AllowFocusRing  =   True
+         AllowResizableColumns=   True
+         AllowRowDragging=   False
+         AllowRowReordering=   False
          Bold            =   False
-         Border          =   True
          ColumnCount     =   6
-         ColumnsResizable=   True
          ColumnWidths    =   ""
          DataField       =   ""
          DataSource      =   ""
          DefaultRowHeight=   20
          DropIndicatorVisible=   False
          Enabled         =   True
-         EnableDrag      =   False
-         EnableDragReorder=   False
-         GridLinesHorizontal=   3
-         GridLinesVertical=   0
-         HasHeading      =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
+         GridLinesHorizontalStyle=   3
+         GridLinesVerticalStyle=   0
+         HasBorder       =   True
+         HasHeader       =   True
+         HasHorizontalScrollbar=   False
+         HasVerticalScrollbar=   True
          HeadingIndex    =   -1
          Height          =   400
-         HelpTag         =   ""
-         Hierarchical    =   False
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          InitialValue    =   ""
@@ -1019,35 +1023,31 @@ Begin Window Window_BEAM_Phsp_Information
          LockRight       =   True
          LockTop         =   True
          RequiresSelection=   False
+         RowSelectionType=   0
          Scope           =   0
-         ScrollbarHorizontal=   False
-         ScrollBarVertical=   True
-         SelectionType   =   0
          TabIndex        =   0
          TabPanelIndex   =   1
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   277
          Transparent     =   False
          Underline       =   False
-         UseFocusRing    =   True
          Visible         =   True
          Width           =   882
          _ScrollOffset   =   0
          _ScrollWidth    =   -1
       End
       Begin PushButton PushButton_LinkPhsp1
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
-         ButtonStyle     =   0
          Cancel          =   False
          Caption         =   "Link Phsp1"
          Default         =   False
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   22
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -1057,13 +1057,12 @@ Begin Window Window_BEAM_Phsp_Information
          LockLeft        =   False
          LockRight       =   False
          LockTop         =   True
+         MacButtonStyle  =   0
          Scope           =   0
          TabIndex        =   1
          TabPanelIndex   =   1
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   240
          Transparent     =   False
          Underline       =   False
@@ -1071,10 +1070,9 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   163
       End
       Begin ProgressWheel ProgressWheel_phsp
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Enabled         =   True
          Height          =   27
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Left            =   119
@@ -1087,21 +1085,23 @@ Begin Window Window_BEAM_Phsp_Information
          TabIndex        =   2
          TabPanelIndex   =   1
          TabStop         =   True
+         Tooltip         =   ""
          Top             =   240
          Transparent     =   False
          Visible         =   False
          Width           =   32
       End
       Begin PushButton PushButton_RefreshList
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
-         ButtonStyle     =   0
          Cancel          =   True
          Caption         =   "refresh"
          Default         =   False
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   22
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -1111,13 +1111,12 @@ Begin Window Window_BEAM_Phsp_Information
          LockLeft        =   True
          LockRight       =   False
          LockTop         =   False
+         MacButtonStyle  =   0
          Scope           =   0
          TabIndex        =   3
          TabPanelIndex   =   1
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   240
          Transparent     =   False
          Underline       =   False
@@ -1125,13 +1124,15 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   83
       End
       Begin Label StaticText22
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   22
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -1148,11 +1149,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   2
          TabStop         =   True
          Text            =   "Filter"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   235
          Transparent     =   False
          Underline       =   False
@@ -1160,31 +1159,32 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   52
       End
       Begin TextField EditField_Filter
-         AcceptTabs      =   False
-         Alignment       =   0
-         AutoDeactivate  =   True
-         AutomaticallyCheckSpelling=   False
-         BackColor       =   &cFFFFFF00
+         AllowAutoDeactivate=   True
+         AllowFocusRing  =   True
+         AllowSpellChecking=   False
+         AllowTabs       =   False
+         BackgroundColor =   &cFFFFFF00
          Bold            =   False
-         Border          =   True
-         CueText         =   ""
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Format          =   ""
+         HasBorder       =   True
          Height          =   22
-         HelpTag         =   ""
+         Hint            =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
          Left            =   97
-         LimitText       =   0
          LockBottom      =   False
          LockedInPosition=   False
          LockLeft        =   False
          LockRight       =   False
          LockTop         =   False
-         Mask            =   ""
+         MaximumCharactersAllowed=   0
          Password        =   False
          ReadOnly        =   False
          Scope           =   0
@@ -1192,43 +1192,43 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   2
          TabStop         =   True
          Text            =   ""
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   235
          Transparent     =   False
          Underline       =   False
-         UseFocusRing    =   True
+         ValidationMask  =   ""
          Visible         =   True
          Width           =   171
       End
       Begin TextField EditField_PhSr1
-         AcceptTabs      =   False
-         Alignment       =   0
-         AutoDeactivate  =   True
-         AutomaticallyCheckSpelling=   False
-         BackColor       =   &cFFFFFF00
+         AllowAutoDeactivate=   True
+         AllowFocusRing  =   True
+         AllowSpellChecking=   False
+         AllowTabs       =   False
+         BackgroundColor =   &cFFFFFF00
          Bold            =   False
-         Border          =   True
-         CueText         =   ""
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Format          =   ""
+         HasBorder       =   True
          Height          =   22
-         HelpTag         =   ""
+         Hint            =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
          Left            =   97
-         LimitText       =   0
          LockBottom      =   False
          LockedInPosition=   False
          LockLeft        =   False
          LockRight       =   False
          LockTop         =   False
-         Mask            =   ""
+         MaximumCharactersAllowed=   0
          Password        =   False
          ReadOnly        =   False
          Scope           =   0
@@ -1236,25 +1236,26 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   2
          TabStop         =   True
          Text            =   ""
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   267
          Transparent     =   False
          Underline       =   False
-         UseFocusRing    =   True
+         ValidationMask  =   ""
          Visible         =   True
          Width           =   171
       End
       Begin Label StaticText21
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   22
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -1271,11 +1272,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   2
          TabStop         =   True
          Text            =   "< with >"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   267
          Transparent     =   False
          Underline       =   False
@@ -1283,27 +1282,32 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   64
       End
       Begin Listbox Listbox_PhaseSpace
-         AutoDeactivate  =   True
-         AutoHideScrollbars=   True
+         AllowAutoDeactivate=   True
+         AllowAutoHideScrollbars=   True
+         AllowExpandableRows=   False
+         AllowFocusRing  =   True
+         AllowResizableColumns=   True
+         AllowRowDragging=   False
+         AllowRowReordering=   False
          Bold            =   False
-         Border          =   True
          ColumnCount     =   1
-         ColumnsResizable=   True
          ColumnWidths    =   ""
          DataField       =   ""
          DataSource      =   ""
          DefaultRowHeight=   -1
          DropIndicatorVisible=   False
          Enabled         =   True
-         EnableDrag      =   False
-         EnableDragReorder=   False
-         GridLinesHorizontal=   0
-         GridLinesVertical=   0
-         HasHeading      =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
+         GridLinesHorizontalStyle=   0
+         GridLinesVerticalStyle=   0
+         HasBorder       =   True
+         HasHeader       =   True
+         HasHorizontalScrollbar=   True
+         HasVerticalScrollbar=   True
          HeadingIndex    =   -1
          Height          =   377
-         HelpTag         =   ""
-         Hierarchical    =   False
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          InitialValue    =   ""
@@ -1315,51 +1319,47 @@ Begin Window Window_BEAM_Phsp_Information
          LockRight       =   True
          LockTop         =   True
          RequiresSelection=   False
+         RowSelectionType=   0
          Scope           =   0
-         ScrollbarHorizontal=   True
-         ScrollBarVertical=   True
-         SelectionType   =   0
          TabIndex        =   4
          TabPanelIndex   =   2
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   301
          Transparent     =   False
          Underline       =   False
-         UseFocusRing    =   True
          Visible         =   True
          Width           =   889
          _ScrollOffset   =   0
          _ScrollWidth    =   -1
       End
       Begin TextField EditField_PhSr2
-         AcceptTabs      =   False
-         Alignment       =   0
-         AutoDeactivate  =   True
-         AutomaticallyCheckSpelling=   False
-         BackColor       =   &cFFFFFF00
+         AllowAutoDeactivate=   True
+         AllowFocusRing  =   True
+         AllowSpellChecking=   False
+         AllowTabs       =   False
+         BackgroundColor =   &cFFFFFF00
          Bold            =   False
-         Border          =   True
-         CueText         =   ""
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Format          =   ""
+         HasBorder       =   True
          Height          =   22
-         HelpTag         =   ""
+         Hint            =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
          Left            =   356
-         LimitText       =   0
          LockBottom      =   False
          LockedInPosition=   False
          LockLeft        =   False
          LockRight       =   False
          LockTop         =   False
-         Mask            =   ""
+         MaximumCharactersAllowed=   0
          Password        =   False
          ReadOnly        =   False
          Scope           =   0
@@ -1367,27 +1367,27 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   2
          TabStop         =   True
          Text            =   ""
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   267
          Transparent     =   False
          Underline       =   False
-         UseFocusRing    =   True
+         ValidationMask  =   ""
          Visible         =   True
          Width           =   127
       End
       Begin PushButton PushButton_Phs_ok
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
-         ButtonStyle     =   0
          Cancel          =   False
          Caption         =   "ok"
          Default         =   False
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   22
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -1397,13 +1397,12 @@ Begin Window Window_BEAM_Phsp_Information
          LockLeft        =   False
          LockRight       =   False
          LockTop         =   False
+         MacButtonStyle  =   0
          Scope           =   0
          TabIndex        =   6
          TabPanelIndex   =   2
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   266
          Transparent     =   False
          Underline       =   False
@@ -1411,15 +1410,16 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   63
       End
       Begin PushButton PushButton_SearchDB
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
-         ButtonStyle     =   0
          Cancel          =   False
          Caption         =   "Find Match"
          Default         =   False
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   22
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -1429,13 +1429,12 @@ Begin Window Window_BEAM_Phsp_Information
          LockLeft        =   False
          LockRight       =   False
          LockTop         =   False
+         MacButtonStyle  =   0
          Scope           =   0
          TabIndex        =   7
          TabPanelIndex   =   2
          TabStop         =   True
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   233
          Transparent     =   False
          Underline       =   False
@@ -1443,13 +1442,15 @@ Begin Window Window_BEAM_Phsp_Information
          Width           =   121
       End
       Begin Label StaticText23
-         AutoDeactivate  =   True
+         AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   0.0
+         FontUnit        =   0
          Height          =   22
-         HelpTag         =   ""
          Index           =   -2147483648
          InitialParent   =   "TabPanel1"
          Italic          =   False
@@ -1466,11 +1467,9 @@ Begin Window Window_BEAM_Phsp_Information
          TabPanelIndex   =   2
          TabStop         =   True
          Text            =   "Replace"
-         TextAlign       =   0
+         TextAlignment   =   0
          TextColor       =   &c00000000
-         TextFont        =   "System"
-         TextSize        =   0.0
-         TextUnit        =   0
+         Tooltip         =   ""
          Top             =   267
          Transparent     =   False
          Underline       =   False
