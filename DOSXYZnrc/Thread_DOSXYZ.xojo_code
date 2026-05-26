@@ -2425,9 +2425,10 @@ Inherits Thread
 		    end
 		    
 		    
-		  elseif gDOSXYZ.DOSXYZ(egsphant_index).DOSXYZ_Input(beam).isource=11 or _
+		  elseif elseif gDOSXYZ.DOSXYZ(egsphant_index).DOSXYZ_Input(beam).isource=9 or _
 		    gDOSXYZ.DOSXYZ(egsphant_index).DOSXYZ_Input(beam).isource=10 or _
-		    gDOSXYZ.DOSXYZ(egsphant_index).DOSXYZ_Input(beam).isource=21or _
+		    gDOSXYZ.DOSXYZ(egsphant_index).DOSXYZ_Input(beam).isource=11 or _
+		    gDOSXYZ.DOSXYZ(egsphant_index).DOSXYZ_Input(beam).isource=21 or _
 		    (gDOSXYZ.DOSXYZ(egsphant_index).DOSXYZ_Input(beam).isource=20 and gDOSXYZ.dosxyz_defaultsource20_as_phasespace=False) then// FOr lib Tomo source  or Synchronized BEAM Simulation Source
 		    
 		    if egsinp.enflag=2 or egsinp.enflag=3 Then
@@ -3801,6 +3802,18 @@ Inherits Thread
 
 
 	#tag ViewBehavior
+		#tag ViewProperty
+			Name="Type"
+			Visible=true
+			Group="Behavior"
+			InitialValue="0"
+			Type="Types"
+			EditorType="Enum"
+			#tag EnumValues
+				"0 - Cooperative"
+				"1 - Preemptive"
+			#tag EndEnumValues
+		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Auto_EGSPhantSettings_Make"
 			Visible=false
